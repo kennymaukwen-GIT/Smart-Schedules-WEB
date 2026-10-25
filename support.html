@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <title>支援 Support · Smart Schedules</title>
-<meta name="description" content="Smart Schedules 支援與常見問題：聯絡方式、刪除資料、移除 Google 帳號、停止 AI 分享、回報 AI 的回覆、動態島、匯出資料。Smart Schedules support and FAQ: contact, deleting data, removing a Google account, stopping AI sharing, reporting an AI reply, the Dynamic Island, exporting data.">
+<meta name="description" content="Smart Schedules 支援與常見問題：聯絡方式、刪除資料、移除 Google 帳號、停止 AI 分享、AI 使用次數、Smart Schedules Pro 的訂閱、取消、回復購買項目和退款、回報 AI 的回覆、動態島、匯出資料。Smart Schedules support and FAQ: contact, deleting data, removing a Google account, stopping AI sharing, AI requests, subscribing to, cancelling, restoring and refunding Smart Schedules Pro, reporting an AI reply, the Dynamic Island, exporting data.">
 <link rel="canonical" href="https://www.smart-schedules.com/support">
 <link rel="icon" type="image/png" href="/logo.png">
 <style>
@@ -112,6 +112,7 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
         <li><a href="/">首頁 <span lang="en">Home</span></a></li>
         <li><a href="/privacy">隱私權政策 <span lang="en">Privacy</span></a></li>
         <li><a href="/support" aria-current="page">支援 <span lang="en">Support</span></a></li>
+        <li><a href="/terms">使用條款 <span lang="en">Terms</span></a></li>
       </ul>
     </nav>
   </div>
@@ -146,7 +147,13 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li><a href="#zh-remove-account">怎麼移除 Google 帳號？</a></li>
   <li><a href="#zh-withdraw">怎麼停止 AI 資料分享（撤回同意）？</a></li>
   <li><a href="#zh-live">動態島什麼時候會出現？</a></li>
-  <li><a href="#zh-purchases">有 App 內購買或訂閱嗎？</a></li>
+  <li><a href="#zh-ai-requests">AI 助理可以用幾次？在哪裡看剩下幾次？</a></li>
+  <li><a href="#zh-ai-count">怎樣算一次？</a></li>
+  <li><a href="#zh-purchases">怎麼訂閱 Smart Schedules Pro？</a></li>
+  <li><a href="#zh-cancel">怎麼取消 Smart Schedules Pro？</a></li>
+  <li><a href="#zh-restore">換新 iPhone 或重新安裝後，怎麼找回 Pro？</a></li>
+  <li><a href="#zh-refund">怎麼申請退款？</a></li>
+  <li><a href="#zh-reinstall">刪除 App 或清除資料後，會有新的免費次數嗎？</a></li>
   <li><a href="#zh-needs">AI 助理需要什麼才能運作？</a></li>
   <li><a href="#zh-ai-report">AI 的回覆有問題或不恰當怎麼辦？</a></li>
   <li><a href="#zh-export">怎麼匯出我的資料？</a></li>
@@ -163,7 +170,8 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>向 Google 要求撤銷授權（需要網路連線），並刪除所有登入權杖；</li>
   <li>刪除帳號、快取的行程、待送出的變更、設定、聊天記錄和匯出檔。</li>
 </ul>
-<p>Google 日曆裡的行程不會被刪除；要刪除行程本身，請在 Google 日曆裡刪除。我們伺服器上剩下的少量技術資料不含行程內容，大部分會在幾天內到期（見隱私權政策的<a href="/privacy#zh-retention">保存期限</a>）。</p>
+<p>Google 日曆裡的行程不會被刪除；要刪除行程本身，請在 Google 日曆裡刪除。清除資料也不會取消 Smart Schedules Pro（見<a href="#zh-cancel">怎麼取消</a>），也不會讓免費次數重新計算（見<a href="#zh-reinstall">會有新的免費次數嗎</a>）。</p>
+<p>我們伺服器上剩下的少量技術資料不含行程內容：你的 AI 使用次數紀錄會在最後一次變更的 90 天後刪除；App 驗證金鑰和安裝編號的紀錄沒有固定的保存期限；其他大部分會在幾天內到期（見隱私權政策的<a href="/privacy#zh-retention">保存期限</a>）。</p>
 <p>打算刪除 App 的話，請在有網路時先清除資料：刪除 App 不會撤銷 Google 授權，iOS 也可能保留登入權杖。清除後，可以到 Google 帳號的<a href="https://myaccount.google.com/connections">第三方應用程式和服務</a>確認 Smart Schedules 已經不在清單上。</p>
 
 <h3 id="zh-remove-account">怎麼移除 Google 帳號？</h3>
@@ -181,8 +189,39 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 </ul>
 <p>一直沒有出現的話，確認「顯示下一個行程」不是「關閉」，以及 iPhone 設定 › App › Smart Schedules 裡的「即時動態」是開著的。詳細說明見隱私權政策的<a href="/privacy#zh-live">第 5 節</a>。</p>
 
-<h3 id="zh-purchases">有 App 內購買或訂閱嗎？</h3>
-<p>沒有。1.0 版沒有任何 App 內購買或訂閱，可以免費使用，所以沒有需要取消或回復的購買項目。</p>
+<h3 id="zh-ai-requests">AI 助理可以用幾次？在哪裡看剩下幾次？</h3>
+<ul>
+  <li><strong>免費版：</strong>每 30 天 50 次。第一個 30 天從你第一次使用開始，結束後馬上接著下一個 30 天。</li>
+  <li><strong>Smart Schedules Pro：</strong>每天最多 50 次，在你 iPhone 時區的午夜重新計算。次數依訂閱計算，所以使用同一個訂閱的 iPhone 共用這 50 次。</li>
+</ul>
+<p>要看剩下幾次，點左上角的 ☰ › 一般 › 助理，看「AI 使用次數」：目前方案、剩餘次數、剩餘天數，以及什麼時候重新計算。如果那裡寫著是起始次數，下次使用 AI 後就會顯示你的實際次數。</p>
+<p>次數用完時，助理會告訴你什麼時候恢復：免費版會說哪一天恢復，並提供「查看 Smart Schedules Pro」；Pro 會說午夜過後恢復。示範模式也一樣，只是助理會改用離線規則回答你的要求。不用 AI 的功能，例如行事曆、提醒和即時動態，都可以照常使用。</p>
+
+<h3 id="zh-ai-count">怎樣算一次？</h3>
+<p>一次就是一個完整任務：你向助理提出的一件事（打字、用麥克風按鈕說、透過 Siri，或在通知裡回覆），包括助理的追問，直到給出結果。例如「明天和 Joe 吃午餐」算一次，即使助理問你幾點、你回答了也一樣。一個任務最多包含你對追問的 5 個回答，之後再回答會算新的一次。在行程頁每點一次「AI 建議」，也算一次。</p>
+<ul>
+  <li>如果 AI 本身沒有回覆（例如 Google 回傳錯誤或空白的回覆），這次不會計算。</li>
+  <li>等待逾時後，在幾分鐘內重新送出一次，也不會再計算。</li>
+  <li>示範模式使用 AI 時也會計算；示範模式的離線規則不使用 AI，不會計算。</li>
+</ul>
+
+<h3 id="zh-purchases">怎麼訂閱 Smart Schedules Pro？</h3>
+<p>用下列任一種方式打開 Smart Schedules Pro 頁面：點左上角的 ☰ › 一般 › 助理 › 升級 Smart Schedules Pro；點右上角的頭像 › 升級 Smart Schedules Pro；或在說免費次數已用完的回覆上點「查看 Smart Schedules Pro」。頁面會列出 Pro 和免費版的差別、App Store 的每月價格，以及自動續訂的說明。點訂閱按鈕，再向 Apple 確認購買。</p>
+<p>Smart Schedules Pro 是每月自動續訂的訂閱，直到你取消為止，沒有免費試用。確認購買時，費用會從你的 Apple 帳號扣款。付款由 Apple 處理，我們看不到你的卡號、姓名或 email。Pro 不能透過「家人共享」分享。完整規則請看<a href="/terms#zh-price">使用條款</a>第 4 節。</p>
+
+<h3 id="zh-cancel">怎麼取消 Smart Schedules Pro？</h3>
+<p>在 App 裡點「管理訂閱」（點右上角的頭像，在 Smart Schedules Pro 下面；或 ☰ › 一般 › 助理），或打開 iPhone 的「設定」App › 你的名字 › 訂閱項目。請在本期結束前至少 24 小時取消，否則會自動續訂。取消後，Pro 會用到已付費的這一期結束，之後回到免費版。</p>
+<p>刪除 App，或 設定 › 資料 › 清除這台裝置上的所有資料，都不會取消訂閱：訂閱屬於你的 Apple 帳號。</p>
+
+<h3 id="zh-restore">換新 iPhone 或重新安裝後，怎麼找回 Pro？</h3>
+<p>使用你訂閱時的同一個 Apple 帳號。Pro 通常會自動出現；如果沒有，點右上角的頭像 › 回復購買項目，或在 Smart Schedules Pro 頁面點「回復購買項目」。如果顯示「沒有可回復的購買項目。」，請確認你用的是訂閱時的 Apple 帳號。</p>
+
+<h3 id="zh-refund">怎麼申請退款？</h3>
+<p>App Store 購買項目的付款和退款由 Apple 依 Apple 的條款處理。要申請退款，請到 <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>，用你的 Apple 帳號登入，依步驟申請 Smart Schedules Pro 的退款。我們無法自己退還 App Store 的款項，但如果 Pro 有問題，歡迎寫信給我們。這不影響你依消費者保護相關法律享有的權利。</p>
+
+<h3 id="zh-reinstall">刪除 App 或清除資料後，會有新的免費次數嗎？</h3>
+<p>不會，這是刻意的設計：否則重新安裝就能重新開始免費次數。你允許 AI 資料分享後，App 第一次連到我們的伺服器時（使用 AI，或為通知擴充功能取得工作階段）會產生一個隨機的安裝編號，存在這支 iPhone 的鑰匙圈（Keychain）。刪除 App 或「清除這台裝置上的所有資料」後，安裝編號仍然保留，所以免費次數會接著計算，只有清除整支 iPhone 時才會移除。安裝編號不會和你的姓名、email、Apple 帳號或 Google 帳號連結，從不傳送給 Google，也不會用於追蹤或廣告（見<a href="/privacy#zh-attest">隱私權政策</a>）。</p>
+<p>Pro 也不受影響：用「回復購買項目」就能找回（見<a href="#zh-restore">怎麼找回 Pro</a>）。</p>
 
 <h3 id="zh-needs">AI 助理需要什麼才能運作？</h3>
 <ul>
@@ -190,7 +229,8 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>允許 AI 資料分享（第一次使用時的說明，或 設定 › AI 與隱私 › 允許）。</li>
   <li>連接 Google 帳號，助理才能讀寫你的行事曆。不登入的話，示範模式會用虛構的範例行事曆；允許 AI 資料分享後可以試用真正的 AI 助理，否則用離線規則。</li>
   <li>年滿 18 歲：Smart Schedules 只提供給年滿 18 歲的人使用（App Store 分級 18+），這是 Google Gemini API 條款的規定。</li>
-  <li>在使用上限內：為了防止濫用，我們的伺服器會限制每個安裝每分鐘的 AI 請求次數，以及每天從通知回覆的次數，每個人都一樣。App 顯示「今天的使用次數已用完，請明天再試。」時，上限會在 UTC 0 點（台灣時間早上 8 點）重新計算。從通知回覆的次數用完時，打開 Smart Schedules 就能繼續。</li>
+  <li>還有剩餘的 AI 使用次數：免費版每 30 天 50 次，Smart Schedules Pro 每天最多 50 次（見<a href="#zh-ai-requests">AI 助理可以用幾次</a>）。</li>
+  <li>在使用上限內：為了防止濫用，我們的伺服器會限制每個安裝每分鐘送出的請求次數，以及每天從通知回覆的次數，不論免費版或 Pro 都一樣。App 顯示「今天的使用次數已用完，請明天再試。」時，上限會在 UTC 0 點（台灣時間早上 8 點）重新計算。從通知回覆的次數用完時，打開 Smart Schedules 就能繼續。</li>
   <li>想用說的：在對話或快速輸入點麥克風按鈕，iOS 詢問時允許語音辨識和麥克風。語音在你的 iPhone 上轉成文字，聲音不會被錄下或傳送到任何地方；你按送出之前，什麼都不會傳送。沒有看到麥克風按鈕，表示這支 iPhone 還不能在裝置上辨識這個語言；鍵盤的聽寫鍵和 Siri 仍然可以用。</li>
 </ul>
 <p>助理會傳送什麼，請看隱私權政策的 <a href="/privacy#zh-ai">AI 助理</a>一節。</p>
@@ -241,7 +281,13 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li><a href="#en-remove-account">How do I remove a Google account?</a></li>
   <li><a href="#en-withdraw">How do I stop AI data sharing (withdraw consent)?</a></li>
   <li><a href="#en-live">When does an event appear in the Dynamic Island?</a></li>
-  <li><a href="#en-purchases">Are there in-app purchases or subscriptions?</a></li>
+  <li><a href="#en-ai-requests">How many AI requests can I make, and where do I see what's left?</a></li>
+  <li><a href="#en-ai-count">What counts as one request?</a></li>
+  <li><a href="#en-purchases">How do I subscribe to Smart Schedules Pro?</a></li>
+  <li><a href="#en-cancel">How do I cancel Smart Schedules Pro?</a></li>
+  <li><a href="#en-restore">How do I get Pro back on a new iPhone or after reinstalling?</a></li>
+  <li><a href="#en-refund">How do I ask for a refund?</a></li>
+  <li><a href="#en-reinstall">If I delete the app or erase my data, do I get new free requests?</a></li>
   <li><a href="#en-needs">What does the AI assistant need to work?</a></li>
   <li><a href="#en-ai-report">What if an AI reply is wrong or inappropriate?</a></li>
   <li><a href="#en-export">How do I export my data?</a></li>
@@ -258,7 +304,8 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>asks Google to revoke access (this needs an internet connection) and deletes every sign-in token;</li>
   <li>deletes accounts, cached events, pending changes, settings, chat history and exports.</li>
 </ul>
-<p>Events in Google Calendar are not deleted; to delete the events themselves, delete them in Google Calendar. The little technical data left on our server holds no event content, and most of it expires within days (see <a href="/privacy#en-retention">How long we keep data</a> in the Privacy Policy).</p>
+<p>Events in Google Calendar are not deleted; to delete the events themselves, delete them in Google Calendar. Erasing doesn't cancel Smart Schedules Pro (see <a href="#en-cancel">How do I cancel</a>) or give you new free AI requests (see <a href="#en-reinstall">Do I get new free requests</a>).</p>
+<p>The little technical data left on our server holds no event content: the count of your AI requests is deleted 90 days after it last changed, the record of this app's App Attest key and install ID has no fixed expiry, and most of the rest expires within days (see <a href="/privacy#en-retention">How long we keep data</a> in the Privacy Policy).</p>
 <p>If you plan to delete the app, erase your data first, while you're online: deleting the app does not revoke Google access, and iOS may keep sign-in tokens. Afterwards you can check under <a href="https://myaccount.google.com/connections">Third-party apps &amp; services</a> in your Google Account that Smart Schedules is no longer listed.</p>
 
 <h3 id="en-remove-account">How do I remove a Google account?</h3>
@@ -276,8 +323,39 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 </ul>
 <p>If an event never appears, check that "Show next event" isn't Off, and that Live Activities are turned on in iPhone Settings › Apps › Smart Schedules. For details, see <a href="/privacy#en-live">section 5</a> of the Privacy Policy.</p>
 
-<h3 id="en-purchases">Are there in-app purchases or subscriptions?</h3>
-<p>No. Version 1.0 has no in-app purchases or subscriptions; it is free, so there is nothing to cancel or restore.</p>
+<h3 id="en-ai-requests">How many AI requests can I make, and where do I see what's left?</h3>
+<ul>
+  <li><strong>Free:</strong> 50 requests every 30 days. The first 30 days start with your first request; when they end, the next 30 days start straight away.</li>
+  <li><strong>Smart Schedules Pro:</strong> up to 50 requests a day. The count starts over at midnight in your iPhone's time zone. It is counted for the subscription, so iPhones that use the same subscription share the 50.</li>
+</ul>
+<p>To see what's left, tap ☰ at the top left › General › Assistant and look under "AI requests": your plan, the requests left, the days left and when the count starts over. If it says these are starting numbers, your own count shows after your next AI request.</p>
+<p>When the requests are used up, the assistant tells you when they come back: on the free plan, the date, with See Smart Schedules Pro; on Pro, after midnight. Demo mode does the same, but answers your request with its offline rules. Everything that doesn't use the AI, such as your calendar, reminders and Live Activities, keeps working.</p>
+
+<h3 id="en-ai-count">What counts as one request?</h3>
+<p>One request is one task: something you ask the assistant (typed, spoken with the microphone button, through Siri or in a reply to a notification), with its follow-up questions, up to its result. For example, "Lunch with Joe tomorrow" counts as one, even if the assistant asks what time and you answer. One task includes up to 5 of your answers to its questions; after that, the next answer counts as a new request. Each tap of AI suggestions on an event page also counts as one.</p>
+<ul>
+  <li>If the AI itself fails to answer (for example, Google returns an error or an empty answer), the request isn't counted.</li>
+  <li>If a request times out and you send it again within a few minutes, that one resend doesn't count again.</li>
+  <li>The AI in demo mode counts too; demo mode's offline rules don't use the AI and aren't counted.</li>
+</ul>
+
+<h3 id="en-purchases">How do I subscribe to Smart Schedules Pro?</h3>
+<p>Open the Smart Schedules Pro page in any of these ways: tap ☰ at the top left › General › Assistant › Get Smart Schedules Pro; tap your avatar at the top right › Get Smart Schedules Pro; or tap See Smart Schedules Pro on a reply that says your free requests are used up. The page shows what Pro gives compared with Free, the monthly price from the App Store and how auto-renewal works. Tap the Subscribe button and confirm with Apple.</p>
+<p>Smart Schedules Pro is a monthly subscription that renews automatically until you cancel. There is no free trial. Payment is charged to your Apple Account when you confirm the purchase. Apple handles the payment, and we never see your card details, name or email. Pro isn't shared through Family Sharing. For the full rules, see section 4 of the <a href="/terms#en-price">Terms of Use</a>.</p>
+
+<h3 id="en-cancel">How do I cancel Smart Schedules Pro?</h3>
+<p>Tap Manage Subscription in the app (tap your avatar at the top right and look under Smart Schedules Pro, or go to ☰ › General › Assistant), or open the iPhone Settings app › your name › Subscriptions. Cancel at least 24 hours before the end of the current period, or it renews. Pro keeps working until the end of the period you paid for; then you're back on the free plan.</p>
+<p>Deleting the app, or Settings › Data › Erase all data on this device, doesn't cancel the subscription: it belongs to your Apple Account.</p>
+
+<h3 id="en-restore">How do I get Pro back on a new iPhone or after reinstalling?</h3>
+<p>Use the same Apple Account you subscribed with. Pro usually shows on its own; if it doesn't, tap your avatar › Restore Purchases, or Restore Purchases on the Smart Schedules Pro page. If the app says "No purchases to restore.", check that you're using the Apple Account you subscribed with.</p>
+
+<h3 id="en-refund">How do I ask for a refund?</h3>
+<p>Apple handles payments and refunds for App Store purchases, under Apple's terms. To ask for a refund, go to <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>, sign in with your Apple Account and follow the steps to request a refund for Smart Schedules Pro. We can't issue App Store refunds ourselves, but please email us if Pro isn't working. Your rights under consumer law are not affected.</p>
+
+<h3 id="en-reinstall">If I delete the app or erase my data, do I get new free requests?</h3>
+<p>No, and that's by design: otherwise a reinstall would start the free requests again. Once you allow AI data sharing, the first time the app contacts our server (to use the AI, or to set up the notification extension's session), it creates a random install ID and keeps it in this iPhone's Keychain. It stays when you delete the app or use Erase all data on this device, so your free count carries on; it is removed only when the whole iPhone is erased. The install ID isn't linked to your name, email, Apple Account or Google account, is never sent to Google, and isn't used for tracking or advertising (see the <a href="/privacy#en-attest">Privacy Policy</a>).</p>
+<p>Pro isn't affected either: Restore Purchases brings it back (see <a href="#en-restore">How do I get Pro back</a>).</p>
 
 <h3 id="en-needs">What does the AI assistant need to work?</h3>
 <ul>
@@ -285,7 +363,8 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>AI data sharing allowed (in the dialog the first time you use it, or Settings › AI &amp; privacy › Allow).</li>
   <li>A connected Google account, so the assistant can read and write your calendar. Without signing in, demo mode uses fictional sample calendars; allow AI data sharing to try the real assistant on them, otherwise it uses offline rules.</li>
   <li>You must be 18 or older: Smart Schedules is only for people aged 18 or older (rated 18+ on the App Store), as Google's Gemini API terms require.</li>
-  <li>Staying within the limits: to prevent abuse, our server limits how many AI requests each installation can make a minute, and how many replies can be sent from a notification each day, the same for everyone. If the app says "Today's limit is used up. Try again tomorrow.", the limit starts again at 00:00 UTC (8:00 in Taiwan). When the limit for replies from a notification is used up, open Smart Schedules to continue.</li>
+  <li>AI requests left: the free plan has 50 every 30 days, and Smart Schedules Pro up to 50 a day (see <a href="#en-ai-requests">How many AI requests can I make</a>).</li>
+  <li>Staying within the limits: to prevent abuse, our server limits how many requests each installation can send it a minute, and how many replies can be sent from a notification each day, the same on the free plan and Pro. If the app says "Today's limit is used up. Try again tomorrow.", the limit starts again at 00:00 UTC (8:00 in Taiwan). When the limit for replies from a notification is used up, open Smart Schedules to continue.</li>
   <li>To speak instead of typing: tap the microphone button in the chat or Quick Capture and allow Speech Recognition and the microphone when iOS asks. Your speech is turned into text on your iPhone, and the audio is not recorded or sent anywhere; nothing is sent until you tap Send. If there is no microphone button, this iPhone can't recognise that language on the device yet; the keyboard's dictation key and Siri still work.</li>
 </ul>
 <p>For what the assistant sends, see <a href="/privacy#en-ai">The AI assistant</a> in the Privacy Policy.</p>

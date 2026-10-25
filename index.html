@@ -176,6 +176,7 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
         <li><a href="/" aria-current="page">首頁 <span lang="en">Home</span></a></li>
         <li><a href="/privacy">隱私權政策 <span lang="en">Privacy</span></a></li>
         <li><a href="/support">支援 <span lang="en">Support</span></a></li>
+        <li><a href="/terms">使用條款 <span lang="en">Terms</span></a></li>
       </ul>
     </nav>
   </div>
@@ -203,20 +204,30 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>月、週、日檢視，可以連接多個 Google 帳號，每個行事曆分別顯示或隱藏。</li>
   <li>行程開始前的提醒和每日摘要；長按提醒就能直接回覆、延後或改時間。</li>
   <li>動態島和即時動態倒數、Siri 與捷徑，以及控制中心和鎖定畫面的控制項目。</li>
-  <li>不登入先試用：示範模式用虛構的範例行事曆，不需要帳號，也不會用到你的 Google 帳號。允許 AI 資料分享後，可以在範例行事曆上試用真正的 AI 助理（會傳送你輸入或說出的內容和範例行程）；沒有允許或連不上時改用離線規則。</li>
+  <li>不登入先試用：示範模式用虛構的範例行事曆，不需要帳號，也不會用到你的 Google 帳號。允許 AI 資料分享後，可以在範例行事曆上試用真正的 AI 助理（會傳送你輸入或說出的內容和範例行程，並計入 AI 使用次數）；沒有允許、連不上或 AI 使用次數用完時，改用離線規則。</li>
 </ul>
 
 <h2>為什麼需要存取你的 Google 日曆</h2>
 <p>Smart Schedules 是你 Google 日曆的用戶端。它讀取你的行程，用來顯示月曆、提醒和即時動態；在你（或你要求助理）新增、修改、刪除行程時寫回 Google 日曆；並讀取你的行事曆清單，讓你選擇要顯示哪些行事曆、新行程存到哪裡。與 Google 日曆的同步直接在你的 iPhone 和 Google 之間進行；只有你允許 AI 資料分享後，相關行程才會經過我們的伺服器送到 Gemini。動態島和即時動態直接在你的 iPhone 上產生，不會上傳行程。</p>
 
 <h2>AI 與隱私</h2>
-<p>助理用 Google 的 Gemini API 理解你的話。點「允許」之前，不會傳送任何資料給 AI；允許後，你的請求和相關的行程會經過我們的伺服器（在 Cloudflare 上執行）直接轉送到 Gemini，伺服器不保存任何行事曆資料，你也可以隨時在 App 裡停止分享。用麥克風按鈕說的話只在 iPhone 上轉成文字，App 只傳送文字，從不傳送聲音。App 附上的行事曆資訊不包含你 Google 帳號的 email 地址：有好幾個帳號時，助理只看到「Account 1」「Account 2」這類代稱。依 Gemini API 的條款，Smart Schedules 只提供給年滿 18 歲的人使用。沒有廣告、沒有追蹤，我們不出售資料。我們不會用 Google 使用者資料來開發、改進或訓練任何 AI 或機器學習模型。完整說明請看<a href="/privacy">隱私權政策</a>。</p>
+<p>助理用 Google 的 Gemini API 理解你的話。點「允許」之前，不會傳送任何資料給 AI；允許後，你的請求和相關的行程會經過我們的伺服器（在 Cloudflare 上執行）直接轉送到 Gemini，伺服器不保存任何行事曆資料，你也可以隨時在 App 裡停止分享。為了計算 AI 使用次數，伺服器會記錄每支 iPhone 用了幾次，以 App 存在那支 iPhone 上的一組隨機編號區分（訂閱 Pro 時改依訂閱計算）；這些記錄不包含任何請求內容（見隱私權政策<a href="/privacy#zh-attest">第 6 節</a>）。用麥克風按鈕說的話只在 iPhone 上轉成文字，App 只傳送文字，從不傳送聲音。App 附上的行事曆資訊不包含你 Google 帳號的 email 地址：有好幾個帳號時，助理只看到「Account 1」「Account 2」這類代稱。依 Gemini API 的條款，Smart Schedules 只提供給年滿 18 歲的人使用。沒有廣告、沒有追蹤，我們不出售資料。我們不會用 Google 使用者資料來開發、改進或訓練任何 AI 或機器學習模型。完整說明請看<a href="/privacy">隱私權政策</a>。</p>
 <p class="quote">Smart Schedules 使用從 Google API 取得的資訊，以及將這些資訊傳輸到任何其他 App，都將遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服務使用者資料政策</a>（Google API Services User Data Policy），包括其中的「有限使用」（Limited Use）規定。</p>
+
+<h2>免費版與 Smart Schedules Pro</h2>
+<ul>
+  <li>免費版：每 30 天可以使用 50 次 AI。第一個 30 天從你第一次使用 AI 開始，之後每個 30 天接著前一個計算。</li>
+  <li>Smart Schedules Pro：可自由選擇的月訂閱，在 App 裡透過 App Store 購買，每天最多可以使用 50 次 AI（一天在你 iPhone 時區的午夜結束）。沒有免費試用。它會每月自動續訂，你隨時可以在 Apple 帳號裡取消。</li>
+  <li>除了 AI 的次數，兩個方案完全一樣：行事曆、提醒、動態島和即時動態都是免費的。</li>
+  <li>剩下幾次：在 App 的 設定 › 助理 › AI 使用次數 查看（點左上角的 ☰ › 一般 打開設定）。</li>
+</ul>
+<p>訂閱的完整規則請看<a href="/terms#zh-pro">使用條款</a>。</p>
 
 <h2>連結與聯絡</h2>
 <ul class="links">
   <li><a href="/privacy">隱私權政策</a></li>
   <li><a href="/support">支援與常見問題</a></li>
+  <li><a href="/terms">使用條款</a></li>
   <li><a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a></li>
 </ul>
 <p class="top"><a href="#main">回到頁首</a></p>
@@ -241,20 +252,30 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>Month, week and day views, with several Google accounts and each calendar shown or hidden as you like.</li>
   <li>Reminders before events and a daily briefing; long-press a reminder to reply, snooze or reschedule right there.</li>
   <li>Dynamic Island and Live Activity countdowns, Siri and Shortcuts, and a Control Center and Lock Screen control.</li>
-  <li>Try without signing in: demo mode has fictional sample calendars, needs no account and never uses your Google account. Allow AI data sharing to try the real AI assistant on them (it sends what you type or say and the sample events); without permission or a connection, it uses offline rules.</li>
+  <li>Try without signing in: demo mode has fictional sample calendars, needs no account and never uses your Google account. Allow AI data sharing to try the real AI assistant on them (it sends what you type or say and the sample events, and counts towards your AI requests); without permission, without a connection or once your AI requests are used up, it uses offline rules.</li>
 </ul>
 
 <h2>Why Smart Schedules uses your Google Calendar</h2>
 <p>Smart Schedules is a client for your Google Calendar. It reads your events to show your calendar, reminders and Live Activities; writes to Google Calendar when you (or the assistant, at your request) add, change or delete events; and reads your list of calendars so you can choose which ones to show and where new events go. Syncing with Google Calendar happens directly between your iPhone and Google. Only after you allow AI data sharing do the related events go through our server to Gemini. The Dynamic Island and Live Activities are created on your iPhone, with no events uploaded.</p>
 
 <h2>AI and privacy</h2>
-<p>The assistant uses Google's Gemini API to understand what you say. Nothing is sent to the AI until you tap Allow. After that, your request and the related events go through our server (running on Cloudflare), which passes them straight to Gemini and stores none of your calendar data; you can stop sharing in the app at any time. What you say with the microphone button is turned into text on your iPhone; the app sends only the text, never audio. The calendar details the app adds never include your Google account email addresses: with several accounts, the assistant sees only names such as "Account 1" and "Account 2". Under the Gemini API terms, Smart Schedules is only for people aged 18 or older. No ads, no tracking, and we never sell data. We never use Google user data to develop, improve or train any AI or machine-learning models. The <a href="/privacy">Privacy Policy</a> explains everything in detail.</p>
+<p>The assistant uses Google's Gemini API to understand what you say. Nothing is sent to the AI until you tap Allow. After that, your request and the related events go through our server (running on Cloudflare), which passes them straight to Gemini and stores none of your calendar data; you can stop sharing in the app at any time. To count your AI requests, the server keeps a count for each iPhone under a random ID that the app stores on it (with Pro, a count for the subscription instead); these counts contain none of your requests (see <a href="/privacy#en-attest">section 6</a> of the Privacy Policy). What you say with the microphone button is turned into text on your iPhone; the app sends only the text, never audio. The calendar details the app adds never include your Google account email addresses: with several accounts, the assistant sees only names such as "Account 1" and "Account 2". Under the Gemini API terms, Smart Schedules is only for people aged 18 or older. No ads, no tracking, and we never sell data. We never use Google user data to develop, improve or train any AI or machine-learning models. The <a href="/privacy">Privacy Policy</a> explains everything in detail.</p>
 <p class="quote">Smart Schedules' use and transfer to any other app of information received from Google APIs will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+<h2>Free and Smart Schedules Pro</h2>
+<ul>
+  <li>Free: 50 AI requests every 30 days. The first 30 days start with your first AI request, and each new 30-day period follows on from the last.</li>
+  <li>Smart Schedules Pro: an optional monthly subscription, bought in the app through the App Store, with up to 50 AI requests a day (the day ends at midnight in your iPhone's time zone). There is no free trial. It renews automatically each month, and you can cancel at any time in your Apple Account.</li>
+  <li>Apart from the number of AI requests, both plans are the same: your calendar, reminders, the Dynamic Island and Live Activities are free.</li>
+  <li>Requests left: see Settings › Assistant › AI requests in the app (tap ☰ at the top left › General to open Settings).</li>
+</ul>
+<p>For the full subscription rules, see the <a href="/terms#en-pro">Terms of Use</a>.</p>
 
 <h2>Links and contact</h2>
 <ul class="links">
   <li><a href="/privacy">Privacy Policy</a></li>
   <li><a href="/support">Support and FAQ</a></li>
+  <li><a href="/terms">Terms of Use</a></li>
   <li><a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a></li>
 </ul>
 <p class="top"><a href="#main">Back to top</a></p>

@@ -112,6 +112,7 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
         <li><a href="/">首頁 <span lang="en">Home</span></a></li>
         <li><a href="/privacy" aria-current="page">隱私權政策 <span lang="en">Privacy</span></a></li>
         <li><a href="/support">支援 <span lang="en">Support</span></a></li>
+        <li><a href="/terms">使用條款 <span lang="en">Terms</span></a></li>
       </ul>
     </nav>
   </div>
@@ -123,16 +124,17 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <!-- ===================================================================== 繁體中文 -->
 <article id="zh" lang="zh-Hant" aria-labelledby="zh-title">
 <h1 id="zh-title">隱私權政策</h1>
-<p class="meta">生效日期：2026 年 10 月 19 日 · <a href="#en" hreflang="en" lang="en">English version</a></p>
-<p><strong>本版更新：</strong>新增麥克風按鈕的語音輸入；出發提醒即將推出，目前的 App 還沒有這個功能（第 8 節）。</p>
+<p class="meta">生效日期：2026 年 10 月 25 日 · <a href="#en" hreflang="en" lang="en">English version</a></p>
+<p><strong>本版更新：</strong>新增 Smart Schedules Pro 月訂閱（第 7 節），以及 AI 使用次數的計算方式、安裝編號和伺服器上的使用次數記錄（第 6、13、15 節）；App 裡 AI 資料分享的說明現在也寫明我們的伺服器會收到安裝編號和 Pro 的購買記錄（第 4 節），說明傳送內容的文字有重大修改時，App 也會再請你允許（第 18 節）。</p>
 
 <section class="box" aria-labelledby="zh-summary">
 <h2 id="zh-summary">重點摘要</h2>
 <ul>
   <li>你的行事曆直接在你的 iPhone 和 Google 之間傳送。Smart Schedules 的伺服器拿不到你的 Google 登入權杖，也不會同步你的行事曆。</li>
   <li>你按「允許」之前，AI 助理不會傳送任何內容。允許後，你的請求和相關的行程資訊會經過我們的伺服器送到 Google 的 Gemini API 來理解；伺服器只轉送，不保存內容。App 附上的行事曆資訊不包含你 Google 帳號的 email 地址。</li>
+  <li>為了計算 AI 使用次數（免費版每 30 天 50 次，Smart Schedules Pro 每天最多 50 次），App 會在你的 iPhone 上保存一個隨機的安裝編號，我們的伺服器則記錄它用了幾次。兩者都不包含你的請求或行程內容，也不連結你的姓名、email 或 Apple 帳號。刪除 App 或清除資料後，安裝編號仍會保留，所以免費次數不會因此重新計算。</li>
+  <li>如果你訂閱 Smart Schedules Pro，付款由 Apple 處理，我們看不到你的卡號或 Apple 帳號。我們的伺服器會檢查 Apple 簽署的購買記錄，但不會保存它。</li>
   <li>麥克風按鈕在你的 iPhone 上把你說的話轉成文字；聲音不會被錄下，也不會傳到任何地方。</li>
-  <li>出發提醒（即將推出，目前的 App 還沒有）：只有在你問到某個地方要多久、什麼時候該出發，或告訴助理你要在什麼時間到哪裡，而且允許位置權限時，App 才會取得你目前的位置，連同目的地和你需要到達的時間，送到 Apple 的地圖服務估算交通時間。你的位置不會送到我們的伺服器或 Gemini，App 也不會保存它。</li>
   <li>動態島和鎖定畫面上的即時動態直接在你的 iPhone 上產生：你的行程不會為此離開 iPhone，我們的伺服器也不保存任何行程。</li>
   <li>沒有廣告、沒有追蹤、沒有分析工具，我們也絕不出售你的資料。</li>
   <li>你隨時可以在 App 裡停止分享、移除 Google 帳號、匯出或清除資料。</li>
@@ -146,8 +148,8 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li><a href="#zh-google">Google 日曆與你的 Google 帳號</a></li>
   <li><a href="#zh-ai">AI 助理（Google Gemini）</a></li>
   <li><a href="#zh-live">動態島與即時動態</a></li>
-  <li><a href="#zh-attest">App 驗證、裝置識別碼與伺服器安全</a></li>
-  <li><a href="#zh-purchases">購買</a></li>
+  <li><a href="#zh-attest">App 驗證、裝置識別碼、AI 使用次數與伺服器安全</a></li>
+  <li><a href="#zh-purchases">購買（Smart Schedules Pro）</a></li>
   <li><a href="#zh-apple">Siri、語音輸入和其他 Apple 服務</a></li>
   <li><a href="#zh-contacting">你聯絡我們時</a></li>
   <li><a href="#zh-website">本網站</a></li>
@@ -168,7 +170,7 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <p>Smart Schedules 沒有自己的帳號系統。要使用真實的行事曆，你需要連接 Google 帳號；也可以按「不登入先試用」進入示範模式。示範模式使用虛構的範例行事曆，從不使用你的 Google 帳號。你允許 AI 資料分享後，示範模式的助理和一般模式一樣運作（見第 4 節），但傳送的行事曆資料是範例資料；沒有允許時，它在你的 iPhone 上用離線規則回答，不會傳送任何內容。</p>
 
 <h2 id="zh-device">2. 存在你 iPhone 上的資料</h2>
-<p>Smart Schedules 把下列資料存在你的裝置上。除了第 3、4、8 節說明的情況，它們不會離開你的 iPhone：</p>
+<p>Smart Schedules 把下列資料存在你的裝置上。除了第 3、4、6、7 節說明的情況，它們不會離開你的 iPhone：</p>
 <ul>
   <li>行程的副本（從 7 天前到 120 天後，以及你打開過的其他日期）：標題、時間、地點、視訊會議連結、備註、顏色、識別碼和建議備註。不會儲存邀請對象名單。</li>
   <li>你連接的 Google 帳號（email 地址）、它們的行事曆清單和每個行事曆的設定。</li>
@@ -177,8 +179,11 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>你和助理的聊天記錄：最多保留最近 200 則，預設保留 30 天（可選 7 天、30 天或永久）。聊天記錄不會傳送到任何地方；助理只看得到目前這段對話（見第 4 節）。</li>
   <li>Google 登入權杖，存在 iOS 鑰匙圈（Keychain）。</li>
   <li>你對 AI 資料分享的選擇。</li>
+  <li>安裝編號：存在 iOS 鑰匙圈的一個隨機編號（見第 6 節）。和這裡幾乎所有其他資料不同，刪除 App 或使用「清除這台裝置上的所有資料」後，它仍會保留。</li>
+  <li>伺服器最近一次告訴 App 的 AI 使用次數（方案、剩下的次數和何時重新計算），用來顯示在 設定 › 助理。「清除這台裝置上的所有資料」會保留它，所以那一頁不會顯示全新的次數（第 15 節）。</li>
+  <li>如果你訂閱 Smart Schedules Pro：Apple 簽署的購買記錄，存在 iOS 鑰匙圈（見第 7 節）。</li>
 </ul>
-<p>不保存的資料：你用麥克風按鈕說話時，語音在你的 iPhone 上即時轉成文字，聲音不會被錄下或保存（第 8 節）。出發提醒（即將推出）用到的你的位置只用在那一次計算和回覆裡的小地圖，不會保存（第 8 節）。</p>
+<p>不保存的資料：你用麥克風按鈕說話時，語音在你的 iPhone 上即時轉成文字，聲音不會被錄下或保存（第 8 節）。</p>
 <p>這些檔案受 iOS 資料保護加密，只在 App 自己的元件（App、即時動態與控制中心擴充功能和通知擴充功能）之間共用。行程內容也會顯示在你裝置上的通知和即時動態裡；提醒是在 iPhone 上建立的本機通知。App 資料可能包含在你的 iCloud 或電腦備份中，備份由你自己管理。</p>
 
 <h2 id="zh-google">3. Google 日曆與你的 Google 帳號</h2>
@@ -193,12 +198,12 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <ul>
   <li>助理建立的行程，說明欄開頭會有「由 Smart Schedules 智慧助理自動排程：」加上你的原話。能看到這個行程的人（包括邀請對象和你共用行事曆的人）都看得到。</li>
   <li>如果你的請求裡有別人的 email，助理可能把對方加為邀請對象，Google 會寄邀請信給對方。</li>
-  <li>App 自己使用的少量隱藏標記（例如行程類型或所屬的計畫），存在行程的私人屬性中。有出發提醒（即將推出）的行程，這裡還會存你想提早幾分鐘到、交通方式，以及開始前幾分鐘要出發，但絕不包含你的位置、出發地點或路線（第 8 節）。</li>
+  <li>App 自己使用的少量隱藏標記（例如行程類型或所屬的計畫），存在行程的私人屬性中。</li>
 </ul>
 <p>你的 Google 日曆資料留在 Google：在 Smart Schedules 移除帳號或清除資料，都不會刪除 Google 日曆裡的任何東西。Google 如何處理你的帳號，請見 <a href="https://policies.google.com/privacy">Google 隱私權政策</a>。</p>
 
 <h2 id="zh-ai">4. AI 助理（Google Gemini）</h2>
-<p>Smart Schedules 用 Google 的 Gemini API 理解你用日常語言說的話（例如「明天中午和 Joe 吃午餐」）。在目前版本中，這是唯一會把你的行事曆資料送到 AI 服務的功能（之後的 AI 選項見第 18 節）。除此之外，目前沒有其他功能會把行事曆資料送到 Google 日曆以外；即將推出的出發提醒（第 8 節）推出後，你問某個行程什麼時候該出發時，它的地點和開始時間會送到 Apple 的地圖服務；你從通知打開 Google 地圖時，它的地點會送到 Google 地圖。</p>
+<p>Smart Schedules 用 Google 的 Gemini API 理解你用日常語言說的話（例如「明天中午和 Joe 吃午餐」）。在目前版本中，這是唯一會把你的行事曆資料送到 Google 日曆以外的功能（之後的 AI 選項見第 18 節）。</p>
 
 <h3>要你允許才會傳送</h3>
 <p>你在「要使用 AI 助理嗎？」的說明中按「允許」之前（也可以在 設定 › AI 與隱私 允許），不會傳送任何內容給 AI。這適用於助理出現的所有地方：對話、快速輸入、Siri 與捷徑、長按提醒通知回覆，以及行程頁的「AI 建議」。示範模式也一樣。</p>
@@ -213,8 +218,9 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>你的時區和語言</li>
 </ul>
 <p>收件者：Google（透過 Gemini API）。要求會經過 Smart Schedules 的伺服器轉送，伺服器不會保存。</p>
+<p>為了計算你的 AI 使用次數，Smart Schedules 的伺服器也會收到 App 存在這支 iPhone 上的一組隨機編號（即使刪除 App 也會保留），訂閱 Smart Schedules Pro 時還會收到 Apple 簽署的購買記錄。這兩項都不會傳給 Google。</p>
 </blockquote>
-<p>說明也寫出語音怎麼轉成文字，以及只傳送文字、不傳送聲音（見第 8 節）。下面是完整的細節。</p>
+<p>說明也寫出語音怎麼轉成文字，以及只傳送文字、不傳送聲音（見第 8 節）。最後一段的隨機編號就是第 6 節說明的安裝編號，購買記錄見第 7 節。這一段是後來才加進說明的，所以如果你在那之前就允許過，App 會在傳送任何內容前再問你一次（見第 18 節）。下面是完整的細節。</p>
 
 <h3>一次對話請求包含什麼</h3>
 <ul>
@@ -226,13 +232,14 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>需要時：等你確認的行程（「先問我」）、提醒通知所屬的行程，以及你正在審閱的長期計畫。</li>
   <li>目前這段對話最近的幾輪（最多 6 輪），包括助理動作的結果（例如剛建立的行程標題和時間）和錯誤訊息。這只存在記憶體中；你儲存的聊天記錄不會傳送。</li>
 </ul>
-<p><strong>示範模式。</strong>請求的組成相同，但其中的行程、行事曆名稱和等待確認的項目都是虛構的範例資料，不包含你的 Google 日曆或 Google 帳號的任何資料；你輸入或說出的內容、當地日期時間、時區、語言和助理設定是真實的。如果你沒有允許 AI 資料分享，示範模式不會傳送任何內容，而是在你的 iPhone 上用離線規則回答。AI 無法使用時（沒有網路、App 驗證無法使用、達到每日上限或伺服器錯誤），也改由離線規則回答。</p>
+<p><strong>示範模式。</strong>請求的組成相同，但其中的行程、行事曆名稱和等待確認的項目都是虛構的範例資料，不包含你的 Google 日曆或 Google 帳號的任何資料；你輸入或說出的內容、當地日期時間、時區、語言和助理設定是真實的。如果你沒有允許 AI 資料分享，示範模式不會傳送任何內容，而是在你的 iPhone 上用離線規則回答。AI 無法使用時（沒有網路、App 驗證無法使用、AI 使用次數已用完、達到其他上限或伺服器錯誤），也改由離線規則回答。示範模式的 AI 請求和一般模式一樣計入你的 AI 使用次數（第 6 節）。</p>
 <p>行程頁的「AI 建議」只傳送那一個行程：標題、日期、時間和時長、地點、備註（最多 300 個字）、是否為視訊會議、你的時區、今天的日期、語言和畫面上已有的建議。</p>
 <p>你輸入或說出的內容、行程的標題、地點和備註，以及傳回給 Gemini 的錯誤訊息裡，如果出現你已連接的 Google 帳號的 email 地址，App 會在傳送前把它換成「[account email]」或「[Account 2 email]」這類佔位字；錯誤訊息裡的其他 email 地址也會換成「[email address]」。Gemini 回覆裡的這些佔位字，會在你的 iPhone 上換回原本的地址，才寫進 Google 日曆或顯示給你看。你輸入或說出的其他內容照原樣傳送，包括其中別人的 email 地址。</p>
 <p>你的請求和行程可能包含別人的資料，例如你輸入的姓名和 email、別人邀請你的行程，或別人共用給你的行事曆名稱。請只分享你有權分享的內容。</p>
 
 <h3>怎麼傳送</h3>
 <p>App 不會直接連到 Gemini，也不含任何 API 金鑰。請求先送到我們的伺服器（Cloudflare Worker），伺服器確認請求來自真正的 App（見第 6 節）後，用我們自己的 API 金鑰把請求內容原封不動轉給 Google。轉送前會移除你的 IP 位址、裝置和語言標頭以及任何 cookie，所以 Google 看到的是我們的伺服器，不是你的裝置。我們的伺服器不會保存或記錄請求和回覆的內容。</p>
+<p>每個請求也會附上伺服器計算 AI 使用次數所需的資料：App 為這次請求產生的隨機編號、你的 iPhone 和 UTC 的時差（用來判斷 Pro 的一天何時結束），以及你訂閱時的 Pro 購買記錄（見第 6、7 節）。這些只給我們的伺服器使用，不會轉給 Google。</p>
 
 <h3>Google 怎麼處理</h3>
 <p>Google LLC 收到請求後產生回覆。我們以付費服務使用 Gemini API：依 Google 對付費服務的<a href="https://ai.google.dev/gemini-api/terms">條款</a>，Google 不會用你的提示或回覆來改善它的產品，並依其資料處理條款處理；Google 會保留一段有限的時間（目前為 55 天），只用來偵測違反其使用政策（Prohibited Use Policy）的行為，以及法律要求的揭露；若被判定為可疑的濫用，可能由 Google 授權人員審閱。</p>
@@ -251,30 +258,30 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 </ul>
 <p>提醒同樣是在 iPhone 上建立的本機通知（第 2 節）。你可以在 設定 › 通知 › 動態島 › 顯示下一個行程 › 關閉 停用即時動態。</p>
 
-<h2 id="zh-attest">6. App 驗證、裝置識別碼與伺服器安全</h2>
+<h2 id="zh-attest">6. App 驗證、裝置識別碼、AI 使用次數與伺服器安全</h2>
 <p>為了防止我們的 API 金鑰和伺服器被濫用，App 會用 Apple 的 App Attest 服務證明自己是真正的 Smart Schedules。你允許 AI 資料分享時，App 會在 iPhone 的安全隔離區（Secure Enclave）產生一把加密金鑰，由 Apple 認證。我們的伺服器以金鑰 ID 為索引，保存這把金鑰的公開部分、使用次數計數器、App 識別碼和建立時間。這筆記錄不含任何內容，也沒有能指出你是誰的資訊；它目前沒有固定的到期時間，「清除這台裝置上的所有資料」也不會刪除它：App 會刪除自己手上的金鑰，但我們的伺服器目前沒有刪除這筆記錄的方式。之後的每個請求都會用這把金鑰簽署。</p>
 <p>通知擴充功能不能使用 App Attest，所以改用 App 替它取得的工作階段權杖（session token）。允許 AI 資料分享期間，即使你沒有使用助理，App 也會每隔幾天在背景或你打開 App 時更新這個工作階段，每次都是一個簽署過的請求送到我們的伺服器。伺服器只保存權杖的單向雜湊值，以及金鑰 ID、App 識別碼和到期時間，保存 7 天。</p>
-<p><strong>速率限制。</strong>為了阻擋濫用，也為了控制 AI 的成本，伺服器會依 App Attest 金鑰和 IP 位址計算請求次數。每個安裝的 App 每分鐘可以送出的請求有上限（目前是 30 個）；在通知裡回覆時，每天也有上限（目前每個安裝每天 200 個 AI 請求，依 UTC 日期計算）。達到上限時，App 會告訴你，你可以稍後再試。IP 位址會縮減成一個網段（IPv4 位址本身，或 IPv6 位址的前半段 /64），只用於這個目的：在 Cloudflare 的速率限制器中作為每分鐘的計數；App Attest 驗證成功時，也會記在每日計數中，最多 2 天。依金鑰計算的請求次數最多保存 2 天。IP 位址不會寫進記錄，也不會轉給 Google。</p>
-<p><strong>記錄（log）。</strong>伺服器會寫下簡短的技術記錄（事件類型、App Attest 金鑰 ID、App 識別碼、狀態碼、錯誤訊息和次數），用來找出故障和濫用。這些記錄的設計是不包含請求內容、行程標題、權杖或 IP 位址；Cloudflare 最多保存 7 天。Cloudflare 自動產生的逐筆請求記錄已經關閉。</p>
+<p><strong>安裝編號。</strong>免費版的 AI 使用次數以每支 iPhone 計算，所以刪除再重新安裝 App 不會讓次數重新計算。為此，你允許 AI 資料分享後，App 第一次連到我們的伺服器時（使用 AI，或為通知擴充功能取得工作階段）會產生一個隨機編號（安裝編號，UUID），存在這支 iPhone 的 iOS 鑰匙圈。它是一個獨立的鑰匙圈項目：iPhone 開機後第一次解鎖起就能讀取，只留在這支裝置上，不會同步到 iCloud 鑰匙圈，也不會透過備份移到其他 iPhone。刪除 App 或使用「清除這台裝置上的所有資料」都不會刪除它，這是刻意的設計；只有清除整支 iPhone（iPhone 設定 › 一般 › 移轉或重置 iPhone › 清除所有內容和設定）才會移除它。App 會為每把 App Attest 金鑰，把安裝編號傳給我們的伺服器一次；伺服器保存金鑰 ID 和安裝編號的對應，和 App Attest 金鑰記錄一樣沒有固定的到期時間。安裝編號不包含任何關於你或你 iPhone 的資訊，不連結你的姓名、email、Apple 帳號或 Google 帳號，從不傳給 Google，也不用於追蹤或廣告。</p>
+<p><strong>AI 使用次數。</strong>伺服器會計算你的 AI 使用次數：免費版每 30 天 50 次，從你第一次使用起算，之後的 30 天一期接著一期；Smart Schedules Pro 每天最多 50 次，以你 iPhone 時區的午夜為一天的結束，同一個訂閱的所有裝置合併計算。一次就是一個任務：你向助理提出的一件事（打字、用 App 的麥克風說話、透過 Siri 或在通知裡回覆），包括 AI 的追問（最多 5 次），直到得到結果；在行程頁點一次「AI 建議」也算一次。失敗的 AI 呼叫會退回次數，逾時後幾分鐘內重送一次不另外計算。示範模式的 AI 請求也一樣計算。</p>
+<p>伺服器（Cloudflare Workers KV）為每個安裝編號保存：第一次計算的時間（30 天週期的起點）、目前是第幾期、這一期用了幾次，以及最近 20 個請求編號（App 為每個請求產生的隨機編號，不含內容）和各自的呼叫次數與時間。這筆記錄在最後一次變更的 90 天後自動刪除。訂閱 Pro 時，改以訂閱計算（Apple 的原始交易 ID，見第 7 節），保存當天用了幾次，以及最近 20 個請求編號和各自的呼叫次數與時間，在最後一次變更的 3 天後刪除。這些記錄都不包含你問了什麼、你的行程或任何其他內容。</p>
+<p>你可以在 設定 › 助理 ›「AI 使用次數」看到你的方案、剩下的次數和何時重新計算。打開這一頁時，App 會向伺服器查詢目前的次數，這不會用掉任何次數；只在 AI 資料分享開著時才會查詢。AI 資料分享關閉時，這一頁會顯示上次顯示的次數，或免費版一開始的次數，不會連到伺服器。</p>
+<p><strong>速率限制。</strong>除了上述的使用次數，為了阻擋濫用，也為了控制 AI 的成本，伺服器會依 App Attest 金鑰和 IP 位址計算請求次數。每個安裝的 App 每分鐘可以送出的請求有上限（目前是 30 個）；在通知裡回覆時，每天也有上限（目前每個安裝每天 200 次 AI 呼叫，依 UTC 日期計算）；同一個網路每天能建立的新 App Attest 金鑰也有數量上限。達到上限時，App 會告訴你，你可以稍後再試。IP 位址會縮減成一個網段（IPv4 位址本身，或 IPv6 位址的前半段 /64），只用於這個目的：在 Cloudflare 的速率限制器中作為每分鐘的計數；App Attest 驗證成功時，也會記在每日計數中，最多 2 天。依金鑰計算的請求次數最多保存 2 天。IP 位址不會寫進記錄，也不會轉給 Google。</p>
+<p><strong>記錄（log）。</strong>伺服器會寫下簡短的技術記錄（事件類型、App Attest 金鑰 ID 或它的前 12 個字元、App 識別碼、狀態碼、錯誤訊息、方案（免費版或 Pro），以及已使用次數和上限等數字），用來找出故障和濫用。這些記錄的設計是不包含請求內容、行程標題、權杖、IP 位址、安裝編號、Pro 購買記錄或交易 ID；Cloudflare 最多保存 7 天。Cloudflare 自動產生的逐筆請求記錄已經關閉。</p>
 <p>執行我們伺服器的 Cloudflare，為了傳送流量和保護網路，必然會處理連線資料，例如你的 IP 位址。</p>
 
-<h2 id="zh-purchases">7. 購買</h2>
-<p>Smart Schedules 1.0 沒有任何 App 內購買或訂閱，App 也不會查詢你的購買記錄，所以我們不會收到或處理任何購買或付款資料。下載 App 由 Apple 透過 App Store 處理，適用 <a href="https://www.apple.com/tw/legal/privacy/">Apple 隱私權政策</a>。如果之後的版本提供購買項目，我們會先更新本政策。</p>
+<h2 id="zh-purchases">7. 購買（Smart Schedules Pro）</h2>
+<p>Smart Schedules 提供一個可自由選擇的自動續訂訂閱：Smart Schedules Pro（月訂閱）。它把 AI 使用次數從每 30 天 50 次提高到每天最多 50 次（第 6 節）；沒有訂閱時使用免費版。購買前，App 會顯示價格和自動續訂的條款；訂閱條款也寫在我們的<a href="/terms">使用條款</a>中。</p>
+<p><strong>付款。</strong>付款由 Apple 透過 App Store 處理，適用 <a href="https://www.apple.com/tw/legal/privacy/">Apple 隱私權政策</a>。我們看不到你的卡號、姓名、email 地址或 Apple 帳號。管理或取消訂閱都透過 Apple 進行（App 裡的「管理訂閱」，或 iPhone 設定裡你 Apple 帳號的「訂閱項目」）。</p>
+<p><strong>App 收到的內容。</strong>購買後，App 會收到 Apple 簽署的交易記錄（StoreKit 2 的簽署交易）。內容包括例如原始交易 ID 和交易 ID、產品 ID、App 的 Bundle ID、購買和到期日期、環境（正式或測試）、App Store 的國家或地區，以及價格和幣別；不包括你的姓名、email 地址或卡號。App 把它存在 iOS 鑰匙圈，並和通知擴充功能共用，讓你在通知裡的回覆也以 Pro 計算。「清除這台裝置上的所有資料」會刪除它；只要訂閱仍有效，StoreKit 會再把它放回來。</p>
+<p><strong>伺服器怎麼檢查。</strong>App 每次送出 AI 請求和查詢使用次數時，會把這筆記錄放在一個獨立的標頭裡傳給我們的伺服器，從不放進傳給 Gemini 的請求。伺服器自己檢查 Apple 的簽章（憑證鏈到 Apple Root CA - G3），不需要連到 Apple，並確認它是本 App 的 Pro 訂閱、沒有被撤銷，也還沒到期。伺服器不保存這筆記錄，只保存原始交易 ID，作為當天 Pro 次數的索引，在最後一次變更的 3 天後刪除（第 6 節）。TestFlight 和 App 審查的測試（沙盒）購買也會被接受。目前伺服器不會收到 Apple 的退款通知，所以已退款的訂閱，可能在那一期的到期日之前仍以 Pro 計算。</p>
 
 <h2 id="zh-apple">8. Siri、語音輸入和其他 Apple 服務</h2>
 <ul>
   <li><strong>Siri 與捷徑：</strong>你用說的時，Apple 處理你的語音，再把文字交給 App；這段文字依第 4 節的規則處理。</li>
   <li><strong>語音輸入：</strong>你在對話或快速輸入裡點麥克風按鈕時，iPhone 上的 Apple 語音辨識會把你說的話轉成文字（中文（台灣）或英文）。Smart Schedules 要求在裝置上辨識，從不使用 Apple 伺服器的辨識，所以聲音只留在你的 iPhone：不會被錄下、保存，也不會傳給我們、Apple 或 Google。只有在麥克風按鈕開著時才會收音。用語音輸入的連結（例如捷徑打開 <code>smartschedule://compose?mode=voice</code>）打開快速輸入時，如果你已經允許語音辨識和麥克風，麥克風按鈕會直接開著；否則只叫出鍵盤，不會詢問權限。文字會出現在輸入框，你可以修改；你送出之前不會傳送任何內容，送出後和打字的內容完全一樣處理（見第 4 節）。如果你的 iPhone 無法在裝置上辨識你的語言，就不會顯示麥克風按鈕；鍵盤的聽寫仍然可以用。第一次點麥克風按鈕時，iOS 會先詢問語音辨識權限，再詢問麥克風權限。iOS 的語音辨識權限提示可能寫著會把語音資料傳給 Apple，那是 iOS 的標準文字；Smart Schedules 只使用在你的 iPhone 上進行的辨識。</li>
   <li><strong>鍵盤聽寫：</strong>你用 iPhone 鍵盤上的聽寫鍵輸入時，是 Apple 把你的話轉成文字；App 只收到轉好的文字，和打字一樣依第 4 節的規則處理。</li>
-  <li><strong>出發提醒（「該出發了」，即將推出）：</strong>目前的 App 還沒有這個功能，也不會取得你的位置；推出後會依下面的方式運作。你告訴助理你要在什麼時間到哪裡（例如「今天 5 點要到台北 101 開會，想提早 30 分鐘到」），或問助理行事曆裡的某個行程什麼時候該出發時，App 會算出你該什麼時候出發；你只問到某個地方要多久（例如「去台北 101 要多久？」）時，只會回覆交通時間，不加入行程、也不建立通知。只是加入有地點和時間的行程（例如「明天 3 點看牙醫」）不會使用這個功能。
-    <ul>
-      <li>只有在這時候，而且只有在 App 裡、你允許「使用 App 期間」取用位置時（第一次會由 iOS 詢問），你的 iPhone 才會從定位服務取得你目前的位置，連同目的地和你需要到達的時間，送到 Apple 的地圖服務（MapKit）。Apple 會找出這個地點，依預估的路況估算交通時間，傳回該出發的時間；回覆裡那張小 Apple 地圖顯示的範圍，也會送到 Apple 的地圖服務。如果是行事曆裡的行程，目的地是行程的地點，需要到達的時間依它的開始時間計算。</li>
-      <li>App 再把時間提早 10 分鐘作為緩衝，在回覆裡寫出建議的時間（例如「建議 15:58 出發（大眾運輸約 22 分鐘，16:30 到達）」），並在你的 iPhone 上建立兩則本機通知：出發前 10 分鐘的「準備出門」，以及出發時間的「該出發了」。在通知上點「出發」會打開 Google 地圖（App；沒有安裝時打開網站），只帶入目的地原本的文字（你輸入的，或行程的地點），絕不帶入你的位置或 Apple 找到的地點，也不帶入出發地點；Google 地圖適用 Google 隱私權政策。Google 地圖可能會用它自己的位置權限（Google 地圖 App 的，或網站上你的瀏覽器的），從你所在的地方規劃路線。</li>
-      <li>你的位置（來自定位服務）、交通時間和出發時間絕不會送到我們的伺服器或 Gemini，Smart Schedules 也不會保存你的位置。Gemini 收到的和任何請求一樣，只有第 4 節列出的內容（你輸入的內容可能包括地點或出發地點）；關於出發，它只會知道有沒有排好出發提醒，或 App 需要問你從哪裡出發。出發提醒只在 Google 日曆的行程上，以行程的私人屬性（第 3 節）加入你想提早幾分鐘到、交通方式，以及開始前幾分鐘要出發，用來保留這個行程的出發提醒；不加入你的位置、出發地點或路線。（助理建立的行程，說明欄會照第 3 節保留你的原話，所以你在那個請求裡打的地點或出發地點會出現在那裡。）</li>
-      <li>算不出時間時（例如沒有位置權限；從 Siri 或在通知上回覆，App 無法取得你的位置；地點太遠，超過約 300 公里；或 Apple 找不到路線），行程仍會加入，但不會建立出發通知，回覆會說明（例如可以打開 App 再算）。沒有位置權限時，助理也可能改問「你從哪裡出發？」，使用你輸入的出發地點：它會以同樣的方式送到 Apple 的地圖服務，也和你輸入的其他內容一樣，隨請求送到 Gemini。你隨時可以在 iPhone 設定 › App › Smart Schedules › 位置（或 設定 › 隱私權與安全性 › 定位服務）關閉位置權限。</li>
-    </ul>
-  </li>
   <li><strong>App Attest：</strong>見第 6 節。</li>
+  <li><strong>App 內購買：</strong>Smart Schedules Pro 的付款由 Apple 處理，見第 7 節。</li>
   <li><strong>分析資料：</strong>如果你選擇與 App 開發者分享（iPhone 設定 › 隱私權與安全性 › 分析與改進項目），Apple 可能提供我們當機報告和使用統計；Apple 不會附上你的姓名或聯絡方式。</li>
 </ul>
 <p>這些服務適用 Apple 隱私權政策。</p>
@@ -289,24 +296,24 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <p class="quote">Smart Schedules 使用從 Google API 取得的資訊，以及將這些資訊傳輸到任何其他 App，都將遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服務使用者資料政策</a>（Google API Services User Data Policy），包括其中的「有限使用」（Limited Use）規定。</p>
 <p>具體來說：</p>
 <ul>
-  <li>我們只用 Google 使用者資料（你的行事曆資料和 Google 帳號的 email 地址）提供你在 App 裡看得到的功能：顯示你連接了哪些帳號，顯示、建立和修改你的行程、提醒（包括出發提醒，即將推出）和即時動態，以及你允許的 AI 助理。Google 帳號的 email 地址只在你的 iPhone 上用來顯示和區分你的帳號，不會傳給 Gemini。</li>
-  <li>在目前版本中，我們只會把它傳給 Google 的 Gemini API（只有在你允許時，用來回答你的請求，經過我們的伺服器轉送、不保存；只傳送第 4 節說明的行事曆資料，不傳送帳號的 email 地址）；出發提醒推出後（即將推出，目前的 App 還沒有），也會傳給 Apple 的地圖服務（只有在你問某個行程什麼時候該出發時，傳送它的地點和開始時間，用來算出出發時間並顯示回覆裡的小地圖）和 Google 地圖（只有在你從通知打開 Google 地圖時，傳送它的地點；見第 8 節）。除此之外，只有在安全需要、遵守法律，或在合併、收購或資產出售時事先取得你明確的同意後，才會傳送。</li>
+  <li>我們只用 Google 使用者資料（你的行事曆資料和 Google 帳號的 email 地址）提供你在 App 裡看得到的功能：顯示你連接了哪些帳號，顯示、建立和修改你的行程、提醒和即時動態，以及你允許的 AI 助理。Google 帳號的 email 地址只在你的 iPhone 上用來顯示和區分你的帳號，不會傳給 Gemini。</li>
+  <li>在目前版本中，我們只會把它傳給 Google 的 Gemini API（只有在你允許時，用來回答你的請求，經過我們的伺服器轉送、不保存；只傳送第 4 節說明的行事曆資料，不傳送帳號的 email 地址）。除此之外，只有在安全需要、遵守法律，或在合併、收購或資產出售時事先取得你明確的同意後，才會傳送。</li>
   <li>我們不會把它用於廣告、不會出售，也不會用來判斷信用或借貸。</li>
   <li>除非你要求（例如你寄來的客服信）、安全需要（例如調查濫用）或法律要求，我們這邊不會有任何人閱讀它（Google 的濫用審查見第 4 節）。</li>
   <li>我們不會用 Google 使用者資料或由它衍生的資料，來開發、改進或訓練任何 AI 或機器學習模型（無論通用或個人化），也不允許別人這樣做。Gemini API 只用它來回答你的請求，而且適用的付費服務條款不允許 Google 用它改善自己的產品。</li>
 </ul>
 
 <h2 id="zh-sharing">12. 誰會收到資料</h2>
-<p>我們不出售、不出租你的個人資料，也不為了廣告分享；我們不會跨 App 或網站追蹤你。Smart Schedules 不含任何廣告、分析、當機回報或追蹤軟體，不使用廣告識別碼，不錄下或保存聲音，也不存取你的聯絡人或 iPhone 內建的「行事曆」App。只有在出發提醒（即將推出）中，你問到某個地方要多久、什麼時候該出發，或告訴助理你要在什麼時間到哪裡，而且允許位置權限時，App 才會取得你的位置（第 8 節）。</p>
+<p>我們不出售、不出租你的個人資料，也不為了廣告分享；我們不會跨 App 或網站追蹤你。Smart Schedules 不含任何廣告、分析、當機回報或追蹤軟體，不使用廣告識別碼，不錄下或保存聲音，也不存取你的位置、聯絡人或 iPhone 內建的「行事曆」App。</p>
 <p>協助我們提供服務的對象：</p>
 <ul>
   <li><strong>Cloudflare, Inc.</strong>：執行我們的伺服器、它的儲存和記錄。它依其<a href="https://www.cloudflare.com/cloudflare-customer-dpa/">資料處理附錄（DPA）</a>作為我們的處理者。</li>
   <li><strong>Vercel Inc.</strong>：託管本網站。它依其<a href="https://vercel.com/legal/dpa">資料處理附錄（DPA）</a>作為我們的處理者。</li>
-  <li><strong>Google LLC</strong>：Gemini API（AI 請求，只有在你允許時）。Google 依其<a href="https://business.safety.google/processorterms/">處理者資料處理附錄</a>（Data Processing Addendum for Products Where Google is a Data Processor）和付費服務條款作為我們的處理者，這些條款不允許它用你的請求改善自己的產品（見第 4 節）。另外，Google 日曆、Google 登入和 Google 地圖（你從出發提醒（即將推出）打開時，第 8 節）是你直接使用的 Google 服務，適用 Google 隱私權政策。</li>
-  <li><strong>Apple Inc.</strong>：App Attest、App Store、Siri，以及出發提醒（即將推出）使用的地圖服務（第 8 節），適用 Apple 自己的條款。</li>
+  <li><strong>Google LLC</strong>：Gemini API（AI 請求，只有在你允許時）。Google 依其<a href="https://business.safety.google/processorterms/">處理者資料處理附錄</a>（Data Processing Addendum for Products Where Google is a Data Processor）和付費服務條款作為我們的處理者，這些條款不允許它用你的請求改善自己的產品（見第 4 節）。另外，Google 日曆和 Google 登入是你直接使用的 Google 服務，適用 Google 隱私權政策。</li>
+  <li><strong>Apple Inc.</strong>：App Attest、App Store（包括 Smart Schedules Pro 的付款）和 Siri，適用 Apple 自己的條款。</li>
   <li><strong>Google</strong>（Google Workspace）：客服信箱 support@smart-schedules.com 使用的 Gmail，接收和保存客服信件，也用來寄出我們的回信（第 9 節）。Google 依 Google Workspace 適用的<a href="https://cloud.google.com/terms/data-processing-addendum">雲端資料處理附錄</a>（Cloud Data Processing Addendum）作為我們的處理者。</li>
 </ul>
-<p>上述擔任我們處理者的服務提供者（Cloudflare、Vercel，以及提供 Gemini API 和 Google Workspace 的 Google）都依契約，以不低於本政策的程度保護你的資料，並只用它來向我們提供服務。你直接使用的 Google 服務（Google 日曆、Google 登入，以及出發提醒會用到的 Google 地圖，即將推出）和 Apple 的服務，依它們自己的條款和隱私權政策處理你的資料。</p>
+<p>上述擔任我們處理者的服務提供者（Cloudflare、Vercel，以及提供 Gemini API 和 Google Workspace 的 Google）都依契約，以不低於本政策的程度保護你的資料，並只用它來向我們提供服務。你直接使用的 Google 服務（Google 日曆和 Google 登入）和 Apple 的服務，依它們自己的條款和隱私權政策處理你的資料。</p>
 <p>我們也可能在法律要求，或為了保護權利與安全而必要時揭露資料。如果 Smart Schedules 轉讓給其他提供者，既有的資料仍受本政策保護；Google 使用者資料只有在事先取得你明確的同意後才會移轉。</p>
 
 <h2 id="zh-retention">13. 保存期限</h2>
@@ -318,9 +325,13 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
     <tr><td>我們伺服器上的 AI 請求內容</td><td>不保存</td></tr>
     <tr><td>Google 端的 AI 請求（Gemini 付費服務）</td><td>最多 55 天，只用於濫用監控（若被判定為可疑的濫用，可能由 Google 授權人員審閱）和法律要求的揭露</td></tr>
     <tr><td>麥克風按鈕的語音</td><td>聲音不會被錄下或保存；只有你送出的文字會和其他請求一樣處理</td></tr>
-    <tr><td>出發提醒（即將推出）用的你的位置</td><td>App 不保存，也從來不會送到我們的伺服器；Apple 的地圖服務依 Apple 隱私權政策處理。你輸入的出發地點也會這樣送到 Apple 的地圖服務，此外和你輸入的其他內容一樣處理（第 3、4 節）</td></tr>
-    <tr><td>行程上的出發設定（即將推出；想提早幾分鐘到、交通方式、開始前幾分鐘出發）</td><td>和行程一起存在你的 Google 日曆裡</td></tr>
-    <tr><td>App Attest 金鑰記錄</td><td>沒有固定的到期時間（不含內容，不連結你的身分）</td></tr>
+    <tr><td>App Attest 金鑰記錄</td><td>沒有固定的到期時間：在 Smart Schedules 提供 AI 服務期間保存，用來驗證這把金鑰簽署的請求；目前沒有自動刪除（不含內容，不連結你的身分）</td></tr>
+    <tr><td>你 iPhone 上的安裝編號（iOS 鑰匙圈）</td><td>直到清除整支 iPhone（清除所有內容和設定）；刪除 App 或使用「清除這台裝置上的所有資料」都會保留</td></tr>
+    <tr><td>設定 › 助理 最近顯示的 AI 使用次數（你的 iPhone 上）</td><td>直到下次更新或刪除 App；使用「清除這台裝置上的所有資料」後仍會保留</td></tr>
+    <tr><td>我們伺服器上 App Attest 金鑰 ID 和安裝編號的對應</td><td>沒有固定的到期時間：在 Smart Schedules 提供 AI 服務期間保存，因為它讓重新安裝不會重新開始免費次數；目前沒有自動刪除（不含內容，不連結你的身分）</td></tr>
+    <tr><td>AI 使用次數（免費版，依安裝編號）</td><td>最後一次變更的 90 天後自動刪除</td></tr>
+    <tr><td>Pro 當天的次數（依訂閱的原始交易 ID）</td><td>最後一次變更的 3 天後自動刪除</td></tr>
+    <tr><td>Apple 簽署的 Pro 購買記錄</td><td>不保存在我們的伺服器；在你 iPhone 的鑰匙圈裡保存到訂閱結束（「清除這台裝置上的所有資料」會刪除它，訂閱仍有效時 StoreKit 會再放回來）</td></tr>
     <tr><td>工作階段權杖的雜湊值</td><td>7 天</td></tr>
     <tr><td>用於速率限制的 IP 網段</td><td>最多 2 天</td></tr>
     <tr><td>速率限制用的請求計數</td><td>最多 2 天</td></tr>
@@ -328,41 +339,43 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
     <tr><td>客服信件（存在 Google Workspace 的 Gmail）</td><td>處理你的請求和後續追蹤所需的期間，之後刪除</td></tr>
   </tbody>
 </table>
-<p>刪除 App 會移除它在 iPhone 上的檔案，但 iOS 可能保留鑰匙圈項目（例如登入權杖），Google 端的授權也會保留到你撤銷為止。刪除 App 前，請在有網路時先使用「清除這台裝置上的所有資料」，再到 Google 帳號的<a href="https://myaccount.google.com/connections">第三方應用程式和服務</a>確認 Smart Schedules 已經不在清單上（還在的話就在那裡移除）。</p>
+<p>刪除 App 會移除它在 iPhone 上的檔案，但 iOS 可能保留鑰匙圈項目（例如登入權杖），Google 端的授權也會保留到你撤銷為止。安裝編號則是刻意保留（第 6 節）。刪除 App 不會取消 Smart Schedules Pro，請透過 Apple 取消（第 7 節）。刪除 App 前，請在有網路時先使用「清除這台裝置上的所有資料」，再到 Google 帳號的<a href="https://myaccount.google.com/connections">第三方應用程式和服務</a>確認 Smart Schedules 已經不在清單上（還在的話就在那裡移除）。</p>
 
 <h2 id="zh-security">14. 安全</h2>
 <ul>
   <li>所有連線都經過加密（HTTPS／TLS）。</li>
-  <li>登入權杖存在 iOS 鑰匙圈；App 的檔案受 iOS 資料保護加密。</li>
-  <li>用 App Attest 確保只有真正的 App 能使用我們的伺服器；AI 的 API 金鑰只存在伺服器上。</li>
+  <li>登入權杖、安裝編號和 Pro 購買記錄存在 iOS 鑰匙圈；App 的檔案受 iOS 資料保護加密。</li>
+  <li>用 App Attest 確保只有真正的 App 能使用我們的伺服器；AI 的 API 金鑰只存在伺服器上；Pro 購買記錄要通過 Apple 簽章的檢查才算數。</li>
   <li>伺服器會移除可識別你的標頭、不保存請求內容，保存的資料大多也會很快到期。</li>
 </ul>
 <p>沒有任何方法能百分之百安全。如果發生影響你資料的安全事件，我們會採取適當措施，並依法律要求通報。</p>
 
 <h2 id="zh-rights">15. 你的選擇與權利</h2>
-<p>提供資料是自願的：不允許 AI 資料分享，就無法使用 AI 助理（示範模式改用離線規則）；不連接 Google 帳號，就無法使用你真實的行事曆，但仍可使用示範模式。麥克風只有在麥克風按鈕開著時才會使用。出發提醒（即將推出）只有在你允許時才使用你的位置；不允許時，可以改成自己輸入出發地點。</p>
+<p>提供資料是自願的：不允許 AI 資料分享，就無法使用 AI 助理（示範模式改用離線規則）；不連接 Google 帳號，就無法使用你真實的行事曆，但仍可使用示範模式。麥克風只有在麥克風按鈕開著時才會使用。使用 AI 時，需要安裝編號和伺服器上的使用次數來套用使用上限。Smart Schedules Pro 可自由選擇是否訂閱。</p>
 <h3>在 App 裡（立即生效）</h3>
 <p>設定的位置：點左上角的 ☰ › 一般。</p>
 <ul>
   <li><strong>停止 AI 資料分享：</strong>設定 › AI 與隱私 › 停止分享。</li>
   <li><strong>移除 Google 帳號：</strong>點右上角的頭像，在帳號上向左滑（或點「⋯」）› 移除帳號；也可以在 ☰ 選單裡帳號 email 旁的「⋯」移除。這會向 Google 要求撤銷 App 的授權，並從 iPhone 刪除該帳號的權杖和快取的行程。撤銷需要網路連線；如果當時離線，請到 Google 帳號的第三方應用程式和服務移除 Smart Schedules（見下一項）。</li>
   <li><strong>在 Google 端撤銷：</strong>到 Google 帳號的<a href="https://myaccount.google.com/connections">第三方應用程式和服務</a>移除 Smart Schedules。</li>
-  <li><strong>匯出：</strong>設定 › 資料 › 匯出我的資料。產生一個 JSON 檔案，包含設定、助理記得的事、帳號和行事曆、快取的行程、聊天記錄和 AI 資料分享的狀態（絕不包含登入權杖）。</li>
-  <li><strong>清除：</strong>設定 › 資料 › 清除這台裝置上的所有資料。這會停止即時動態、撤回 AI 資料分享、移除通知、向 Google 要求撤銷授權並刪除所有登入權杖，再刪除帳號、快取的行程、待送出的變更、設定、聊天記錄和匯出檔。撤銷授權需要網路連線；如果當時離線，請到 Google 帳號移除 Smart Schedules 的存取權。伺服器上剩下的資料見第 6、13 節。</li>
+  <li><strong>匯出：</strong>設定 › 資料 › 匯出我的資料。產生一個 JSON 檔案，包含設定、助理記得的事、帳號和行事曆、快取的行程、聊天記錄和 AI 資料分享的狀態（絕不包含登入權杖、安裝編號或 Pro 購買記錄）。</li>
+  <li><strong>清除：</strong>設定 › 資料 › 清除這台裝置上的所有資料。這會停止即時動態、撤回 AI 資料分享、移除通知、向 Google 要求撤銷授權並刪除所有登入權杖，再刪除帳號、快取的行程、待送出的變更、設定、聊天記錄和匯出檔。撤銷授權需要網路連線；如果當時離線，請到 Google 帳號移除 Smart Schedules 的存取權。清除不會刪除鑰匙圈裡的安裝編號，也不會刪除我們伺服器上的 AI 使用次數，所以免費次數不會因此重新計算；設定 › 助理 最近顯示的次數也會保留。它會刪除 iPhone 上的 Pro 購買記錄，訂閱仍有效時 StoreKit 會再放回來。伺服器上剩下的資料見第 6、13 節。</li>
+  <li><strong>安裝編號：</strong>只有清除整支 iPhone 才會移除：iPhone 設定 › 一般 › 移轉或重置 iPhone › 清除所有內容和設定。</li>
+  <li><strong>Smart Schedules Pro：</strong>「管理訂閱」在 設定 › 助理，以及帳號頁（點右上角的頭像 › Smart Schedules Pro）；帳號頁也有「回復購買項目」。取消要透過 Apple；刪除 App 不會取消訂閱。</li>
   <li><strong>聊天記錄：</strong>設定 › 資料 › 保留聊天記錄／清除聊天記錄。</li>
   <li><strong>麥克風和語音辨識：</strong>在 iPhone 設定 › App › Smart Schedules 關閉（或到 設定 › 隱私權與安全性）。關閉後仍可以打字。</li>
-  <li><strong>位置（出發提醒，即將推出）：</strong>在 iPhone 設定 › App › Smart Schedules › 位置 選「永不」（或到 設定 › 隱私權與安全性 › 定位服務）。關閉後，出發提醒（即將推出）可以改用你輸入的出發地點。</li>
   <li><strong>刪除行程本身：</strong>在 Google 日曆裡刪除。</li>
 </ul>
 <h3>寫信給我們</h3>
-<p>依你所在地區的法律（例如英國、美國加州或台灣），你可能有權查詢、閱覽、取得副本、更正或刪除你的資料，限制或反對處理，要求資料可攜，以及撤回同意。大部分資料在你的裝置上，你可以用上面的工具自己處理。我們伺服器上的資料只連結隨機 ID，不連結你的姓名或 email，所以我們通常無法用你的身分找到它；這些資料大部分也會在幾天內到期。請寫信到 <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a>，我們會在法律規定的期限內回覆。你也可以向你所在地的個人資料保護主管機關申訴，例如英國的資訊專員辦公室（ICO）。</p>
+<p>依你所在地區的法律（例如英國、美國加州或台灣），你可能有權查詢、閱覽、取得副本、更正或刪除你的資料，限制或反對處理，要求資料可攜，以及撤回同意。大部分資料在你的裝置上，你可以用上面的工具自己處理。我們伺服器上的資料只連結隨機 ID（例如 App Attest 金鑰 ID 和安裝編號），Pro 的次數則連結 Apple 的原始交易 ID，都不連結你的姓名、email 或 Apple 帳號，所以我們無法用你的 email 或身分找到它。這些資料會依第 13 節的期限到期：大部分在幾天內，AI 使用次數在最後一次變更的 90 天後，App Attest 金鑰記錄以及金鑰 ID 和安裝編號的對應，則在 AI 服務提供期間保存。清除整支 iPhone 會移除它上面的安裝編號。請寫信到 <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a>，我們會在法律規定的期限內回覆。你也可以向你所在地的個人資料保護主管機關申訴，例如英國的資訊專員辦公室（ICO）。</p>
 <div class="box">
-<p><strong>反對權：</strong>對於以正當利益為依據的處理（見下方的法律依據：安全和防止濫用、AI 請求的上限、本網站、客服信件，以及 Apple 提供的當機報告和使用統計），你可以隨時寫信到 <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a> 反對。</p>
+<p><strong>反對權：</strong>對於以正當利益為依據的處理（見下方的法律依據：安全和防止濫用、AI 請求的上限、安裝編號和免費版的 AI 使用次數、本網站、客服信件，以及 Apple 提供的當機報告和使用統計），你可以隨時寫信到 <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a> 反對。</p>
 </div>
 <h3>法律依據（適用英國 GDPR 或類似法律時）</h3>
 <ul>
-  <li><strong>同意：</strong>AI 助理的資料分享（第 4 節），以及出發提醒（即將推出，第 8 節）：App 只有在你以 iOS 的位置權限允許後才使用你的位置（可以在 iOS 設定撤回），也只有在你問到某個地方要多久、什麼時候該出發，或告訴助理你要在什麼時間到哪裡時，才把地點、出發地點和時間送到 Apple 的地圖服務。你可以隨時撤回同意；撤回同意不影響撤回前的處理。</li>
-  <li><strong>正當利益：</strong>安全和防止濫用，包括同時用來控制成本的 AI 請求上限（第 6 節）、傳送本網站、回覆你的客服信件（第 9 節），以及在你允許下由 Apple 提供的當機報告和使用統計（第 8 節）。</li>
+  <li><strong>同意：</strong>AI 助理的資料分享（第 4 節）。你可以隨時撤回；撤回同意不影響撤回前的處理。</li>
+  <li><strong>履行契約：</strong>你訂閱時提供 Smart Schedules Pro：檢查 Apple 簽署的購買記錄，並計算 Pro 的使用次數（第 6、7 節）。</li>
+  <li><strong>正當利益：</strong>安全和防止濫用，包括同時用來控制成本的 AI 請求上限（第 6 節）；免費版的 AI 使用次數，包括安裝編號和伺服器上的使用次數記錄（第 6 節）；傳送本網站、回覆你的客服信件（第 9 節），以及在你允許下由 Apple 提供的當機報告和使用統計（第 8 節）。</li>
   <li><strong>法律義務：</strong>回應合法的要求。</li>
 </ul>
 
@@ -373,7 +386,7 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <p>我們的伺服器在 Cloudflare 的全球網路上執行：請求通常在離你較近的 Cloudflare 資料中心處理，保存的資料存在 Cloudflare 沒有指定地區的中央儲存中，並可能在全球各地快取。Google 和 Apple 在它們自己的全球基礎設施（包括美國）處理資料。Cloudflare 依歐盟—美國資料隱私框架和它的英國延伸（UK Extension，適用於英國的使用者），以及標準契約條款進行跨境傳輸。Google 依其<a href="https://business.safety.google/processorterms/">處理者資料處理附錄</a>處理 Gemini 請求，跨境傳輸依其中的標準契約條款進行；Google LLC 也取得歐盟—美國資料隱私框架和它的英國延伸的認證。客服信件存在 Google Workspace，Google 依其<a href="https://cloud.google.com/terms/data-processing-addendum">雲端資料處理附錄</a>處理，跨境傳輸依其中的規定進行（Google 採用的傳輸機制，例如資料隱私框架，或標準契約條款）。本網站由 Vercel 在它的全球網路上傳送，Vercel 依其資料處理附錄中的標準契約條款進行跨境傳輸。</p>
 
 <h2 id="zh-changes">18. 政策變更</h2>
-<p>我們會在本頁公布更新並修改生效日期。重大變更會在本頁明顯標示；如果變更影響 AI 助理傳送的內容，App 會在傳送任何資料前再次請你允許。</p>
+<p>我們會在本頁公布更新並修改生效日期。重大變更會在本頁明顯標示；如果變更影響 AI 助理傳送的內容，或 App 裡說明傳送內容的文字有重大修改，App 會在傳送任何資料前再次請你允許。</p>
 <p>之後的版本可能提供其他 AI 選項，例如 Apple 的裝置端模型，或你自己連結的 AI 帳號；目前版本沒有。任何新選項把你的資料送到任何地方之前，我們會先更新本政策，寫明收件者和它收到的內容，App 也會先徵求你的同意。我們只會提供條款寫明不會用這些資料訓練 AI 模型的服務。</p>
 
 <h2 id="zh-contact">19. 聯絡方式</h2>
@@ -385,16 +398,17 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
 <!-- ===================================================================== English -->
 <article id="en" lang="en" aria-labelledby="en-title">
 <h1 id="en-title">Privacy Policy</h1>
-<p class="meta">Effective date: October 19, 2026 · <a href="#zh" hreflang="zh-Hant" lang="zh-Hant">繁體中文版</a></p>
-<p><strong>What's new in this version:</strong> speech input with the microphone button; departure reminders are coming soon and are not yet in the app (section 8).</p>
+<p class="meta">Effective date: 25 October 2026 · <a href="#zh" hreflang="zh-Hant" lang="zh-Hant">繁體中文版</a></p>
+<p><strong>What's new in this version:</strong> Smart Schedules Pro, a monthly subscription (section 7), and how AI requests are counted, with the install ID and the request count on our server (sections 6, 13 and 15). The AI data-sharing explanation in the app now also says that our server receives the install ID and the Pro purchase record (section 4), and the app asks you again when that explanation changes significantly (section 18).</p>
 
 <section class="box" aria-labelledby="en-summary">
 <h2 id="en-summary">In short</h2>
 <ul>
   <li>Your calendar goes straight between your iPhone and Google. The Smart Schedules server never gets your Google sign-in tokens and does not sync your calendar.</li>
   <li>The AI assistant sends nothing until you tap Allow. After that, your request and related calendar details go through our server to Google's Gemini API to be understood. Our server passes them on without keeping them. The calendar details the app adds do not include your Google account email addresses.</li>
+  <li>To count your AI requests (50 every 30 days on the free plan, up to 50 a day with Smart Schedules Pro), the app keeps a random install ID on your iPhone, and our server keeps a count for it. Neither contains your requests or events, and neither is linked to your name, email or Apple Account. The install ID stays when you delete the app or erase its data, so the free requests don't start over that way.</li>
+  <li>If you subscribe to Smart Schedules Pro, Apple handles the payment; we never see your card details or Apple Account. Our server checks the purchase record Apple signs and does not keep it.</li>
   <li>The microphone button turns what you say into text on your iPhone; the audio is never recorded or sent anywhere.</li>
-  <li>Departure reminders (coming soon, not yet in the app): only when you ask how long it takes to get somewhere or when to leave, or tell the assistant where you need to be and when, and only if you allow location access, does the app get your current location and send it, with the destination and the time you need to arrive, to Apple's map service to estimate the travel time. Your location never goes to our server or to Gemini, and the app does not keep it.</li>
   <li>Live Activities in the Dynamic Island and on the Lock Screen are created on your iPhone: your events don't leave it for them, and our server keeps none of your events.</li>
   <li>No ads, no tracking, no analytics, and we never sell your data.</li>
   <li>You can stop sharing, remove a Google account, and export or erase your data in the app at any time.</li>
@@ -408,8 +422,8 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
   <li><a href="#en-google">Google Calendar and your Google account</a></li>
   <li><a href="#en-ai">The AI assistant (Google Gemini)</a></li>
   <li><a href="#en-live">Dynamic Island and Live Activities</a></li>
-  <li><a href="#en-attest">App Attest, device identifiers and server security</a></li>
-  <li><a href="#en-purchases">Purchases</a></li>
+  <li><a href="#en-attest">App Attest, device identifiers, AI request count and server security</a></li>
+  <li><a href="#en-purchases">Purchases (Smart Schedules Pro)</a></li>
   <li><a href="#en-apple">Siri, speech input and other Apple services</a></li>
   <li><a href="#en-contacting">When you contact us</a></li>
   <li><a href="#en-website">This website</a></li>
@@ -430,7 +444,7 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
 <p>Smart Schedules has no accounts of its own. To use your real calendar you connect a Google account. You can also tap "Try without signing in" to use demo mode. Demo mode uses fictional sample calendars and never uses your Google account. Once you allow AI data sharing, its assistant works as described in section 4, but the calendar details it sends are the sample ones; without your permission it answers with offline rules on your iPhone and sends nothing.</p>
 
 <h2 id="en-device">2. Data stored on your iPhone</h2>
-<p>Smart Schedules keeps the following on your device. Except as described in sections 3, 4 and 8, it does not leave your iPhone:</p>
+<p>Smart Schedules keeps the following on your device. Except as described in sections 3, 4, 6 and 7, it does not leave your iPhone:</p>
 <ul>
   <li>A copy of your events (from 7 days ago to 120 days ahead, plus any other dates you open): title, times, location, video-call link, notes, colours, identifiers and suggested notes. Guest lists are not stored.</li>
   <li>Your connected Google accounts (email addresses), their calendar lists and your settings for each calendar.</li>
@@ -439,8 +453,11 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
   <li>Your chat history with the assistant: at most the last 200 messages, kept for 30 days by default (you can choose 7 days, 30 days or forever). Chat history is never sent anywhere; the assistant only sees the current conversation (see section 4).</li>
   <li>Google sign-in tokens, in the iOS Keychain.</li>
   <li>Your answer to the AI data-sharing question.</li>
+  <li>The install ID, a random ID in the iOS Keychain (see section 6). Unlike almost everything else here, it stays when you delete the app or use "Erase all data on this device".</li>
+  <li>The AI request count our server last reported (plan, requests left and when they start over), to show it in Settings › Assistant. "Erase all data on this device" keeps it, so that page doesn't show a fresh allowance (section 15).</li>
+  <li>If you subscribe to Smart Schedules Pro: the purchase record Apple signs, in the iOS Keychain (see section 7).</li>
 </ul>
-<p>Not kept: when you use the microphone button, your speech is turned into text on your iPhone as you speak, and the audio is not recorded or kept (section 8). Your location, when departure reminders (coming soon) use it, is used only for that one calculation and the small map in the reply, and is not kept (section 8).</p>
+<p>Not kept: when you use the microphone button, your speech is turned into text on your iPhone as you speak, and the audio is not recorded or kept (section 8).</p>
 <p>These files are protected by iOS data protection and shared only among the app's own parts (the app, its Live Activity and Control Center extension and its notification extension). Event details also appear on your device in notifications and Live Activities; reminders are local notifications created on your iPhone. App data can be included in your iCloud or computer backups, which you control.</p>
 
 <h2 id="en-google">3. Google Calendar and your Google account</h2>
@@ -455,12 +472,12 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
 <ul>
   <li>Events the assistant creates begin their description with "由 Smart Schedules 智慧助理自動排程：" ("scheduled automatically by the Smart Schedules assistant:") followed by your request. Anyone who can see the event, including guests and people you share the calendar with, can read it.</li>
   <li>If your request includes someone's email address, the assistant may add them as a guest, and Google then emails them an invitation.</li>
-  <li>A few hidden markers the app uses (such as the event type or the plan it belongs to) are stored in the event's private properties. For an event with a departure reminder (coming soon), they also hold how many minutes early you want to arrive, the travel mode and how many minutes before the start to leave, but never your location, the starting point or the route (section 8).</li>
+  <li>A few hidden markers the app uses (such as the event type or the plan it belongs to) are stored in the event's private properties.</li>
 </ul>
 <p>Your Google Calendar data stays in Google: removing an account or erasing data in Smart Schedules does not delete anything from Google Calendar. Google's handling of your account is covered by the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
 
 <h2 id="en-ai">4. The AI assistant (Google Gemini)</h2>
-<p>Smart Schedules uses Google's Gemini API to understand requests in everyday language (for example "lunch with Joe tomorrow at noon"). In the current version, this is the only feature that sends your calendar data to an AI service (for future AI options, see section 18). No other feature currently sends calendar data outside Google Calendar; once departure reminders (coming soon, section 8) are available, when you ask when to leave for an event, its place and start time go to Apple's map service, and when you open Google Maps from the notification, its place goes to Google Maps.</p>
+<p>Smart Schedules uses Google's Gemini API to understand requests in everyday language (for example "lunch with Joe tomorrow at noon"). In the current version, this is the only feature that sends your calendar data outside Google Calendar (for future AI options, see section 18).</p>
 
 <h3>Only with your permission</h3>
 <p>Nothing is sent to the AI until you tap Allow in the "Use the AI assistant?" dialog (you can also allow it in Settings › AI &amp; privacy). This applies everywhere the assistant works: the chat, Quick Capture, Siri and Shortcuts, replies from a reminder notification, and AI suggestions on an event page. This includes demo mode.</p>
@@ -475,8 +492,9 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
   <li>Your time zone and language</li>
 </ul>
 <p>Recipient: Google, through the Gemini API. Requests pass through the Smart Schedules server, which doesn't keep them.</p>
+<p>To count your AI requests, the Smart Schedules server also receives a random ID that the app keeps on this iPhone (it stays even if you delete the app) and, with Smart Schedules Pro, the purchase record Apple signs. Neither is sent to Google.</p>
 </blockquote>
-<p>It also explains how speech is turned into text, and that only the text is sent, never audio (see section 8). The full details follow.</p>
+<p>It also explains how speech is turned into text, and that only the text is sent, never audio (see section 8). The random ID in the last paragraph is the install ID described in section 6; for the purchase record, see section 7. That paragraph was added to the explanation later, so if you allowed AI data sharing before then, the app asks you again before sending anything (see section 18). The full details follow.</p>
 
 <h3>What a chat request contains</h3>
 <ul>
@@ -488,13 +506,14 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
   <li>When relevant: events waiting for your confirmation ("Ask me first"), the event a reminder is about, and a long-term plan you are reviewing.</li>
   <li>The last few turns (up to 6) of the current conversation, including the results of the assistant's actions (such as the title and time of an event it just created) and error messages. These are held in memory only; your saved chat history is never sent.</li>
 </ul>
-<p><strong>Demo mode.</strong> A request has the same parts, but the events, calendar names and items waiting for confirmation are fictional sample data; nothing from your Google Calendar or Google account is included. What you type or say, your local date and time, time zone, language and assistant settings are real. If you haven't allowed AI data sharing, demo mode sends nothing and answers with offline rules on your iPhone. It also uses those rules when the AI can't be used (no connection, App Attest unavailable, the daily limit reached or a server error).</p>
+<p><strong>Demo mode.</strong> A request has the same parts, but the events, calendar names and items waiting for confirmation are fictional sample data; nothing from your Google Calendar or Google account is included. What you type or say, your local date and time, time zone, language and assistant settings are real. If you haven't allowed AI data sharing, demo mode sends nothing and answers with offline rules on your iPhone. It also uses those rules when the AI can't be used (no connection, App Attest unavailable, your AI requests used up, another limit reached or a server error). Demo mode's AI requests count towards your AI requests like any others (section 6).</p>
 <p>For AI suggestions on an event page, only that event is sent: its title, date, time and duration, location, notes (up to 300 characters), whether it is a video call, your time zone, today's date, language and the suggestions already shown.</p>
 <p>If the address of a Google account you connected appears in what you type or say, in an event's title, location or notes, or in an error message sent back to Gemini, the app replaces it with a placeholder such as "[account email]" or "[Account 2 email]" before sending; any other email address in an error message becomes "[email address]". When Gemini's answer uses these placeholders, your iPhone puts the address back before it writes to Google Calendar or shows you the answer. The rest of what you type or say is sent as it is, including other people's email addresses.</p>
 <p>Your requests and events may contain other people's information, such as names and email addresses you type, invitations from other people, or the names of calendars shared with you. Please share only what you are entitled to share.</p>
 
 <h3>How it travels</h3>
 <p>The app never contacts Gemini directly and contains no API key. Requests go to our server (a Cloudflare Worker), which checks that they come from the genuine app (see section 6) and passes the request content unchanged to Google with our own API key. First it removes your IP address, device and language headers and any cookies, so Google sees our server, not your device. Our server does not store or log the content of requests or answers.</p>
+<p>With each request, the app also sends what our server needs to count your AI requests: a random ID the app makes for the request, your iPhone's offset from UTC (to know when a Pro day ends) and, if you subscribe, your Pro purchase record (see sections 6 and 7). Our server uses these itself and never passes them on to Google.</p>
 
 <h3>What Google does with it</h3>
 <p>Google LLC receives the request and generates the answer. We use the Gemini API as a paid service: under Google's <a href="https://ai.google.dev/gemini-api/terms">terms</a> for paid services, Google does not use your prompts or the responses to improve its products, processes them under its data processing terms, and keeps them for a limited period (currently 55 days) only to detect violations of its Prohibited Use Policy and for legally required disclosures, which may include review by authorized Google staff if activity is flagged as possible abuse.</p>
@@ -513,30 +532,30 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
 </ul>
 <p>Reminders are local notifications created on your iPhone too (section 2). You can turn Live Activities off in Settings › Notifications › Dynamic Island › Show next event › Off.</p>
 
-<h2 id="en-attest">6. App Attest, device identifiers and server security</h2>
+<h2 id="en-attest">6. App Attest, device identifiers, AI request count and server security</h2>
 <p>To keep our API key and server from being misused, the app proves it is the genuine Smart Schedules app with Apple's App Attest service. When you allow AI data sharing, the app creates a cryptographic key in your iPhone's Secure Enclave, and Apple certifies it. Under the key's ID, our server keeps the key's public part, a usage counter, the app identifier and when it was created. This record holds no content and nothing that identifies you. It currently has no fixed expiry, and "Erase all data on this device" does not remove it: the app deletes its own copy of the key, but our server currently has no way to delete the record. Every later request is signed with this key.</p>
 <p>The notification extension cannot use App Attest, so it uses a session token the app obtains for it. While AI data sharing is allowed, the app renews this session every few days, in the background or when you open the app, even if you don't use the assistant; each renewal is a signed request to our server. Our server keeps only a one-way hash of the token, with the key ID, the app identifier and the expiry time, for 7 days.</p>
-<p><strong>Rate limiting.</strong> To block abuse and keep the cost of the AI under control, our server counts requests per App Attest key and per IP address. Each installation of the app can send a limited number of requests a minute (currently 30), and replies typed in a notification also have a daily limit (currently 200 AI requests per installation per day, by UTC date). When a limit is reached, the app tells you, and you can try again later. IP addresses are reduced to a network block (an IPv4 address as is, or the first half, the /64, of an IPv6 address) and used only for this: as per-minute counts in Cloudflare's rate limiter and, after a successful App Attest check, in a daily count kept for up to 2 days. Request counts per key are kept for up to 2 days. IP addresses are never logged and never passed on to Google.</p>
-<p><strong>Logs.</strong> Our server writes short technical log entries (event types, App Attest key IDs, the app identifier, status codes, error messages and counts) to find faults and abuse. They are designed never to contain request content, event titles, tokens or IP addresses, and Cloudflare keeps them for up to 7 days. Cloudflare's automatic per-request logs are turned off.</p>
+<p><strong>Install ID.</strong> The free plan's AI requests are counted per iPhone, so that deleting and reinstalling the app does not start them over. For this, once you allow AI data sharing, the first time the app contacts our server (to use the AI, or to set up the notification extension's session) it creates a random ID (the install ID, a UUID) and keeps it in the iOS Keychain on this iPhone. It is a Keychain item of its own: it can be read once the iPhone has been unlocked after starting up, stays on this device only, is not synced to iCloud Keychain and does not move to another iPhone through a backup. It stays when you delete the app and when you use "Erase all data on this device"; this is deliberate. Only erasing the iPhone (iPhone Settings › General › Transfer or Reset iPhone › Erase All Content and Settings) removes it. The app sends the install ID to our server once for each App Attest key, and our server keeps the pairing of the key's ID and the install ID, with no fixed expiry, like the App Attest key record. The install ID holds nothing about you or your iPhone. It is not linked to your name, email, Apple Account or Google account, is never sent to Google, and is not used for tracking or advertising.</p>
+<p><strong>AI request count.</strong> Our server counts your AI requests: on the free plan, 50 requests every 30 days, counted from your first request, with each 30-day period following on from the last; with Smart Schedules Pro, up to 50 a day, the day ending at midnight in your iPhone's time zone, counted per subscription across all its devices. One request is one task: something you ask the assistant (typed, spoken with the app's microphone, through Siri or in a notification reply), with the AI's follow-up questions (up to 5), up to its result. One tap of AI suggestions on an event page counts as one too. AI calls that fail are given back, and one resend within a few minutes of a timeout is free. Demo mode's AI requests are counted the same way.</p>
+<p>For each install ID, our server (Cloudflare Workers KV) keeps when the first counted request was made (the start of the 30-day periods), which period it is, how many requests were used in it, and the latest 20 request IDs (random IDs the app makes for each request, with no content) with how many AI calls each made and when. This is deleted automatically 90 days after it last changed. With Pro, the count is kept per subscription instead (under Apple's original transaction ID; see section 7): that day's count and the latest 20 request IDs with how many AI calls each made and when, deleted 3 days after it last changed. None of these records contain what you asked, your events or any other content.</p>
+<p>You can see your plan, the requests left and when they start over in Settings › Assistant › AI requests. When that page opens, the app asks our server for the current count, which uses none of your requests. It asks only while AI data sharing is allowed; while it is off, the page shows the count it last showed, or the free plan's starting numbers, without contacting our server.</p>
+<p><strong>Rate limiting.</strong> Separately from the allowance above, to block abuse and keep the cost of the AI under control, our server counts requests per App Attest key and per IP address. Each installation of the app can send a limited number of requests a minute (currently 30), replies typed in a notification also have a daily limit (currently 200 AI calls per installation per day, by UTC date), and only a limited number of new App Attest keys can be set up from one network in a day. When a limit is reached, the app tells you, and you can try again later. IP addresses are reduced to a network block (an IPv4 address as is, or the first half, the /64, of an IPv6 address) and used only for this: as per-minute counts in Cloudflare's rate limiter and, after a successful App Attest check, in a daily count kept for up to 2 days. Request counts per key are kept for up to 2 days. IP addresses are never logged and never passed on to Google.</p>
+<p><strong>Logs.</strong> Our server writes short technical log entries (event types, App Attest key IDs or their first 12 characters, the app identifier, status codes, error messages, the plan (free or Pro) and numbers such as requests used and the limit) to find faults and abuse. They are designed never to contain request content, event titles, tokens, IP addresses, the install ID, the Pro purchase record or transaction IDs, and Cloudflare keeps them for up to 7 days. Cloudflare's automatic per-request logs are turned off.</p>
 <p>Cloudflare, which runs our server, necessarily processes connection data such as your IP address to deliver traffic and protect its network.</p>
 
-<h2 id="en-purchases">7. Purchases</h2>
-<p>Smart Schedules 1.0 has no in-app purchases or subscriptions, and the app does not check your purchase history, so we receive and process no purchase or payment data. Apple handles downloads of the app through the App Store, under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. If a later version offers purchases, we will update this policy first.</p>
+<h2 id="en-purchases">7. Purchases (Smart Schedules Pro)</h2>
+<p>Smart Schedules offers one optional auto-renewable subscription, Smart Schedules Pro (monthly). It raises the AI allowance from 50 requests every 30 days to up to 50 a day (section 6); without it, the free plan applies. Before you buy, the app shows the price and the auto-renewal terms, and the subscription terms are also in our <a href="/terms">Terms of Use</a>.</p>
+<p><strong>Payment.</strong> Apple processes the payment through the App Store, under the <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a>. We never see your card details, name, email address or Apple Account. You manage or cancel the subscription with Apple (Manage Subscription in the app, or Subscriptions under your Apple Account in iPhone Settings).</p>
+<p><strong>What the app receives.</strong> After a purchase, the app receives the transaction record Apple signs (a StoreKit 2 signed transaction). It includes, for example, the original transaction ID and the transaction ID, the product ID, the app's bundle ID, the purchase and expiry dates, the environment (live or test), the App Store country or region (storefront), and the price and currency. It does not include your name, email address or card details. The app keeps it in the iOS Keychain, shared with its notification extension so that replies from a notification count as Pro too. "Erase all data on this device" deletes it, and StoreKit puts it back while your subscription is active.</p>
+<p><strong>How our server checks it.</strong> The app sends this record with each AI request, and when it asks for your count, to our server in a header of its own, never inside the request to Gemini. Our server checks Apple's signature itself (the certificate chain to Apple Root CA - G3), without contacting Apple, and checks that the record is for this app's Pro subscription, has not been revoked and has not expired. It does not store the record. It keeps only the original transaction ID, as the key of that day's Pro count, which is deleted 3 days after it last changed (section 6). Test (sandbox) purchases from TestFlight and App Review are accepted too. Our server does not yet receive refund notices from Apple, so a refunded subscription may keep Pro until the expiry date of its period.</p>
 
 <h2 id="en-apple">8. Siri, speech input and other Apple services</h2>
 <ul>
   <li><strong>Siri and Shortcuts:</strong> when you speak, Apple processes your voice and gives the app the text, which then follows the rules in section 4.</li>
   <li><strong>Speech input:</strong> when you tap the microphone button in the chat or in Quick Capture, Apple's speech recognition on your iPhone turns what you say into text, in Chinese (Taiwan) or English. Smart Schedules requires recognition on the device and never uses Apple's server recognition, so the audio stays on your iPhone: it is not recorded, kept, or sent to us, Apple or Google. The app listens only while the microphone button is on. A link that opens Quick Capture for voice input (for example a shortcut that opens <code>smartschedule://compose?mode=voice</code>) turns the microphone button on by itself if you have already allowed Speech Recognition and the microphone; otherwise it only brings up the keyboard and asks for nothing. The text appears in the input field, where you can change it; nothing is sent until you send it, and then it is handled exactly like typed text (see section 4). If your iPhone cannot recognise your language on the device, the microphone button is not shown; keyboard dictation still works. The first time you tap the microphone button, iOS asks for Speech Recognition permission and then Microphone permission. iOS's Speech Recognition permission message may say that speech data is sent to Apple; that is iOS's standard wording, and Smart Schedules only uses recognition that runs on your iPhone.</li>
   <li><strong>Keyboard dictation:</strong> when you use the dictation key on the iPhone keyboard, Apple turns what you say into text; the app receives only the text, which follows the rules in section 4 just like typing.</li>
-  <li><strong>Departure reminders ("time to leave", coming soon):</strong> the current version of the app does not have this feature yet and does not get your location; once it is available, it works as described below. When you tell the assistant where you need to be and when (for example "meeting at Taipei 101 at 5 today, I want to get there 30 minutes early"), or ask it when to leave for an event in your calendar, the app works out when you should leave; if you only ask how long it takes to get somewhere (for example "how long to Taipei 101?"), it replies with the travel time only, without adding an event or setting notifications. Just adding an event with a place and a time (for example "dentist at 3 tomorrow") does not use this feature.
-    <ul>
-      <li>Only then, and only in the app with your permission to use your location while using the app (iOS asks the first time), does your iPhone get your current location from Location Services and send it, with the destination and the time you need to arrive, to Apple's map service (MapKit). Apple finds the place, estimates the travel time with expected traffic and returns when to leave; it also receives the area shown by the small Apple map in the reply. For an event in your calendar, the destination is the event's location, and the time you need to arrive comes from its start time.</li>
-      <li>The app then moves that time 10 minutes earlier as a margin, gives the suggested time in its reply (for example "Leave at 15:58 (about 22 minutes by public transport, arriving 16:30)"), and creates two local notifications on your iPhone: one to get ready, 10 minutes before you should leave, and one when it is time to leave. The notification's button for setting off opens Google Maps (the app, or the website if the app isn't installed) with only the destination as it was written (what you typed, or the event's location), never your location or the place Apple found, and no starting point; the Google Privacy Policy applies to Google Maps. Google Maps may then use its own access to your location (the Google Maps app's, or your browser's on the website) to plan the route from where you are.</li>
-      <li>Your location (from Location Services), the travel time and the departure time never go to our server or to Gemini, and Smart Schedules does not keep your location. Gemini receives only what section 4 lists for any request (what you type may include the place or a starting point); about departures, it learns only whether departure reminders were set, or that the app needs to ask where you are leaving from. For departure reminders, the app adds to the Google Calendar event only how many minutes early you want to arrive, the travel mode and how many minutes before the start to leave, in the event's private properties (section 3), to keep the departure reminders for that event; it adds no location, starting point or route. (An event the assistant creates keeps your request in its description, as section 3 says, so a place or starting point you typed in that request appears there.)</li>
-      <li>If the time can't be worked out (for example without location permission; from Siri or a reply typed on a notification, where the app can't get your location; when the place is too far away, more than about 300 km; or when Apple finds no route), the event is still added, no departure notifications are created, and the reply says so (for example, that you can open the app to work it out). Without location permission, the assistant may instead ask where you are leaving from and use the starting point you type: it goes to Apple's map service in the same way and, like anything else you type, to Gemini with your request. You can turn location access off at any time in iPhone Settings › Apps › Smart Schedules › Location (or Settings › Privacy &amp; Security › Location Services).</li>
-    </ul>
-  </li>
   <li><strong>App Attest:</strong> see section 6.</li>
+  <li><strong>In-app purchase:</strong> Apple handles payments for Smart Schedules Pro; see section 7.</li>
   <li><strong>Analytics:</strong> if you have chosen to share with app developers (iPhone Settings › Privacy &amp; Security › Analytics &amp; Improvements), Apple may give us crash reports and usage statistics. Apple does not include your name or contact details.</li>
 </ul>
 <p>The Apple Privacy Policy covers these services.</p>
@@ -551,24 +570,24 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
 <p class="quote">Smart Schedules' use and transfer to any other app of information received from Google APIs will adhere to <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
 <p>In particular:</p>
 <ul>
-  <li>We use Google user data (your calendar data and your Google account's email address) only to provide the features you see in the app: showing which accounts you connected, showing, creating and changing your events, reminders (including departure reminders, coming soon) and Live Activities, and the AI assistant you have allowed. Your Google account's email address is used only on your iPhone, to show and tell apart your accounts, and is not sent to Gemini.</li>
-  <li>In the current version, we transfer it only to Google's Gemini API (only with your permission, to answer your requests, passing through our server, which doesn't keep it; only the calendar data described in section 4, never your accounts' email addresses); once departure reminders are available (coming soon, not yet in the app), also to Apple's map service (an event's place and start time, only when you ask when to leave for it, to work out when to leave and show the small map in the reply) and to Google Maps (its place, only when you open Google Maps from the notification; see section 8). Otherwise we transfer it only where needed for security, to comply with the law, or, as part of a merger, acquisition or sale of assets, only after obtaining your explicit prior consent.</li>
+  <li>We use Google user data (your calendar data and your Google account's email address) only to provide the features you see in the app: showing which accounts you connected, showing, creating and changing your events, reminders and Live Activities, and the AI assistant you have allowed. Your Google account's email address is used only on your iPhone, to show and tell apart your accounts, and is not sent to Gemini.</li>
+  <li>In the current version, we transfer it only to Google's Gemini API (only with your permission, to answer your requests, passing through our server, which doesn't keep it; only the calendar data described in section 4, never your accounts' email addresses). Otherwise we transfer it only where needed for security, to comply with the law, or, as part of a merger, acquisition or sale of assets, only after obtaining your explicit prior consent.</li>
   <li>We do not use it for advertising, do not sell it, and do not use it to determine creditworthiness or for lending.</li>
   <li>No one on our side reads it unless you ask us to (for example in a support email you send), it is needed for security (such as investigating abuse), or the law requires it (for Google's own abuse review, see section 4).</li>
   <li>We do not use Google user data, or data derived from it, to develop, improve or train any AI or machine-learning models, generalized or personalized, and we do not allow anyone else to do so. The Gemini API uses it only to answer your request, under paid-service terms that do not allow Google to use it to improve its products.</li>
 </ul>
 
 <h2 id="en-sharing">12. Who receives data</h2>
-<p>We do not sell or rent your personal data, or share it for advertising, and we do not track you across apps or websites. Smart Schedules contains no advertising, analytics, crash-reporting or tracking software, does not use the advertising identifier, does not record or keep audio, and does not access your contacts or the iPhone's built-in Calendar app. It gets your location only for departure reminders (coming soon), when you ask how long it takes to get somewhere or when to leave, or tell the assistant where you need to be and when, and have allowed location access (section 8).</p>
+<p>We do not sell or rent your personal data, or share it for advertising, and we do not track you across apps or websites. Smart Schedules contains no advertising, analytics, crash-reporting or tracking software, does not use the advertising identifier, does not record or keep audio, and does not access your location, your contacts or the iPhone's built-in Calendar app.</p>
 <p>Service providers that help us run Smart Schedules:</p>
 <ul>
   <li><strong>Cloudflare, Inc.</strong> runs our server, its storage and logs, as our processor under its <a href="https://www.cloudflare.com/cloudflare-customer-dpa/">Data Processing Addendum</a>.</li>
   <li><strong>Vercel Inc.</strong> hosts this website, as our processor under its <a href="https://vercel.com/legal/dpa">Data Processing Addendum</a>.</li>
-  <li><strong>Google LLC</strong> provides the Gemini API (AI requests, only with your permission), as our processor under its <a href="https://business.safety.google/processorterms/">Data Processing Addendum for Products Where Google is a Data Processor</a> and its paid-service terms, which do not allow it to use your requests to improve its products (see section 4). Separately, Google Calendar, Google sign-in and Google Maps (when you open it from a departure reminder (coming soon), section 8) are Google services you use directly, under the Google Privacy Policy.</li>
-  <li><strong>Apple Inc.</strong> provides App Attest, the App Store, Siri, and the map service used for departure reminders (coming soon, section 8), under Apple's own terms.</li>
+  <li><strong>Google LLC</strong> provides the Gemini API (AI requests, only with your permission), as our processor under its <a href="https://business.safety.google/processorterms/">Data Processing Addendum for Products Where Google is a Data Processor</a> and its paid-service terms, which do not allow it to use your requests to improve its products (see section 4). Separately, Google Calendar and Google sign-in are Google services you use directly, under the Google Privacy Policy.</li>
+  <li><strong>Apple Inc.</strong> provides App Attest, the App Store (including payments for Smart Schedules Pro) and Siri, under Apple's own terms.</li>
   <li><strong>Google</strong> (Google Workspace) provides Gmail for our support mailbox, support@smart-schedules.com, which receives and stores support messages and sends our replies (section 9), as our processor under the <a href="https://cloud.google.com/terms/data-processing-addendum">Cloud Data Processing Addendum</a> that applies to Google Workspace.</li>
 </ul>
-<p>The providers above that act as our processors (Cloudflare, Vercel, and Google for the Gemini API and Google Workspace) are bound by contract to protect your data at least as well as this policy describes, and to use it only to provide their services to us. The Google services you use directly (Google Calendar and Google sign-in, and Google Maps for departure reminders, coming soon) and Apple's services handle your data under their own terms and privacy policies.</p>
+<p>The providers above that act as our processors (Cloudflare, Vercel, and Google for the Gemini API and Google Workspace) are bound by contract to protect your data at least as well as this policy describes, and to use it only to provide their services to us. The Google services you use directly (Google Calendar and Google sign-in) and Apple's services handle your data under their own terms and privacy policies.</p>
 <p>We may also disclose data where the law requires it or where necessary to protect rights and safety. If Smart Schedules is transferred to another provider, existing data remains protected by this policy, and Google user data is transferred only after obtaining your explicit prior consent.</p>
 
 <h2 id="en-retention">13. How long we keep data</h2>
@@ -580,9 +599,13 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
     <tr><td>AI request content on our server</td><td>Not kept</td></tr>
     <tr><td>AI requests at Google (Gemini paid service)</td><td>Up to 55 days, only for abuse monitoring (which may include review by authorized Google staff if activity is flagged as possible abuse) and legally required disclosures</td></tr>
     <tr><td>Speech from the microphone button</td><td>Audio is not recorded or kept; only the text you send is handled like other requests</td></tr>
-    <tr><td>Your location for departure reminders (coming soon)</td><td>Not kept by the app and never sent to our server; Apple's map service handles it under the Apple Privacy Policy. A starting point you type goes to Apple's map service in the same way and is otherwise handled like the rest of what you type (sections 3 and 4)</td></tr>
-    <tr><td>Departure settings on an event (coming soon; minutes early, travel mode, minutes before the start to leave)</td><td>Kept with the event in your Google Calendar</td></tr>
-    <tr><td>App Attest key record</td><td>No fixed expiry (no content, not linked to your identity)</td></tr>
+    <tr><td>App Attest key record</td><td>No fixed expiry: kept while Smart Schedules' AI service runs, to verify the requests signed with that key; there is currently no automatic deletion (no content, not linked to your identity)</td></tr>
+    <tr><td>Install ID on your iPhone (iOS Keychain)</td><td>Until the iPhone is erased (Erase All Content and Settings); it stays when you delete the app or use "Erase all data on this device"</td></tr>
+    <tr><td>AI request count last shown in Settings › Assistant (on your iPhone)</td><td>Until it is updated or the app is deleted; it stays when you use "Erase all data on this device"</td></tr>
+    <tr><td>Pairing of App Attest key ID and install ID, on our server</td><td>No fixed expiry: kept while Smart Schedules' AI service runs, because it is what stops a reinstall from restarting the free requests; there is currently no automatic deletion (no content, not linked to your identity)</td></tr>
+    <tr><td>AI request count (free plan, per install ID)</td><td>Deleted automatically 90 days after it last changed</td></tr>
+    <tr><td>Pro day count (per subscription, by original transaction ID)</td><td>Deleted automatically 3 days after it last changed</td></tr>
+    <tr><td>Pro purchase record signed by Apple</td><td>Not stored on our server; kept in your iPhone's Keychain while your subscription is active ("Erase all data on this device" deletes it, and StoreKit puts it back while the subscription is active)</td></tr>
     <tr><td>Session token hashes</td><td>7 days</td></tr>
     <tr><td>IP network blocks used for rate limiting</td><td>Up to 2 days</td></tr>
     <tr><td>Request counts for rate limiting</td><td>Up to 2 days</td></tr>
@@ -590,41 +613,43 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
     <tr><td>Support emails (in Gmail, Google Workspace)</td><td>As long as needed for your request and any follow-up, then deleted</td></tr>
   </tbody>
 </table>
-<p>Deleting the app removes its files from your iPhone, but iOS may keep Keychain items such as sign-in tokens, and the app's access to your Google account remains until you revoke it. Before deleting the app, use "Erase all data on this device" while you're online, then check that Smart Schedules no longer appears under <a href="https://myaccount.google.com/connections">Third-party apps &amp; services</a> in your Google Account (and remove it there if it does).</p>
+<p>Deleting the app removes its files from your iPhone, but iOS may keep Keychain items such as sign-in tokens, and the app's access to your Google account remains until you revoke it. The install ID is kept on purpose (section 6). Deleting the app does not cancel Smart Schedules Pro; cancel it with Apple (section 7). Before deleting the app, use "Erase all data on this device" while you're online, then check that Smart Schedules no longer appears under <a href="https://myaccount.google.com/connections">Third-party apps &amp; services</a> in your Google Account (and remove it there if it does).</p>
 
 <h2 id="en-security">14. Security</h2>
 <ul>
   <li>All connections are encrypted (HTTPS/TLS).</li>
-  <li>Sign-in tokens are kept in the iOS Keychain, and the app's files are protected by iOS data protection.</li>
-  <li>App Attest ensures that only the genuine app can use our server; the AI API key stays on the server.</li>
+  <li>Sign-in tokens, the install ID and the Pro purchase record are kept in the iOS Keychain, and the app's files are protected by iOS data protection.</li>
+  <li>App Attest ensures that only the genuine app can use our server; the AI API key stays on the server; a Pro purchase record counts only if Apple's signature on it checks out.</li>
   <li>Our server removes identifying headers, does not store request content, and most of what it does store expires quickly.</li>
 </ul>
 <p>No method is completely secure. If a security incident affects your data, we will take appropriate steps and give notice as the law requires.</p>
 
 <h2 id="en-rights">15. Your choices and rights</h2>
-<p>Providing data is voluntary: without AI data sharing, the AI assistant is unavailable (demo mode then uses offline rules); without a Google account you can't use your real calendar, but you can still use demo mode. The microphone is used only while the microphone button is on. Departure reminders (coming soon) use your location only if you allow it; otherwise you can type where you are leaving from.</p>
+<p>Providing data is voluntary: without AI data sharing, the AI assistant is unavailable (demo mode then uses offline rules); without a Google account you can't use your real calendar, but you can still use demo mode. The microphone is used only while the microphone button is on. When you use the AI, the install ID and the count on our server are needed to apply the allowance. Smart Schedules Pro is optional.</p>
 <h3>In the app (takes effect immediately)</h3>
 <p>To open Settings, tap ☰ at the top left › General.</p>
 <ul>
   <li><strong>Stop AI data sharing:</strong> Settings › AI &amp; privacy › Stop sharing.</li>
   <li><strong>Remove a Google account:</strong> tap your avatar at the top right, swipe left on the account (or tap ⋯) › Remove account; or use the ⋯ next to the account's email in the ☰ menu. This asks Google to revoke the app's access and deletes that account's tokens and cached events from your iPhone. Revoking needs an internet connection; if you were offline, remove Smart Schedules under Third-party apps &amp; services in your Google Account (next item).</li>
   <li><strong>Revoke at Google:</strong> remove Smart Schedules under <a href="https://myaccount.google.com/connections">Third-party apps &amp; services</a> in your Google Account.</li>
-  <li><strong>Export:</strong> Settings › Data › Export my data creates a JSON file with your settings, what the assistant remembers, accounts and calendars, cached events, chat history and AI data-sharing status (never sign-in tokens).</li>
-  <li><strong>Erase:</strong> Settings › Data › Erase all data on this device stops Live Activities, withdraws AI data sharing, removes notifications, asks Google to revoke access and deletes every sign-in token, then deletes accounts, cached events, pending changes, settings, chat history and exports. Revoking access needs an internet connection; if you were offline, remove Smart Schedules under Third-party apps &amp; services in your Google Account. For what remains on the server, see sections 6 and 13.</li>
+  <li><strong>Export:</strong> Settings › Data › Export my data creates a JSON file with your settings, what the assistant remembers, accounts and calendars, cached events, chat history and AI data-sharing status (never sign-in tokens, the install ID or the Pro purchase record).</li>
+  <li><strong>Erase:</strong> Settings › Data › Erase all data on this device stops Live Activities, withdraws AI data sharing, removes notifications, asks Google to revoke access and deletes every sign-in token, then deletes accounts, cached events, pending changes, settings, chat history and exports. Revoking access needs an internet connection; if you were offline, remove Smart Schedules under Third-party apps &amp; services in your Google Account. Erasing does not remove the install ID from the Keychain or your AI request count from our server, so it does not start the free requests over; the count last shown in Settings › Assistant stays too. It deletes the Pro purchase record from your iPhone, and StoreKit puts it back while your subscription is active. For what remains on the server, see sections 6 and 13.</li>
+  <li><strong>Install ID:</strong> only erasing the iPhone removes it: iPhone Settings › General › Transfer or Reset iPhone › Erase All Content and Settings.</li>
+  <li><strong>Smart Schedules Pro:</strong> Manage Subscription is in Settings › Assistant and in the account sheet (tap your avatar at the top right › Smart Schedules Pro), which also has Restore Purchases. You cancel with Apple; deleting the app does not cancel the subscription.</li>
   <li><strong>Chat history:</strong> Settings › Data › Keep chat history / Clear chat history.</li>
   <li><strong>Microphone and speech recognition:</strong> turn them off for Smart Schedules in iPhone Settings › Apps › Smart Schedules (or Settings › Privacy &amp; Security). You can still type.</li>
-  <li><strong>Location (departure reminders, coming soon):</strong> choose Never in iPhone Settings › Apps › Smart Schedules › Location (or go to Settings › Privacy &amp; Security › Location Services). Departure reminders (coming soon) can then use a starting point you type.</li>
   <li><strong>Delete the events themselves:</strong> in Google Calendar.</li>
 </ul>
 <h3>By email</h3>
-<p>Depending on where you live (for example the UK, California or Taiwan), you may have the right to access, obtain a copy of, correct or delete your data, to restrict or object to its processing, to data portability, and to withdraw consent. Most of your data is on your device, and the tools above put you in control of it. Data on our server is linked only to random IDs, not to your name or email, so we usually cannot find it from your identity, and most of it expires within days. Write to <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a> and we will reply within the time the law requires. You can also complain to your data protection authority, such as the Information Commissioner's Office (ICO) in the UK.</p>
+<p>Depending on where you live (for example the UK, California or Taiwan), you may have the right to access, obtain a copy of, correct or delete your data, to restrict or object to its processing, to data portability, and to withdraw consent. Most of your data is on your device, and the tools above put you in control of it. Data on our server is linked only to random IDs (such as the App Attest key ID and the install ID) or, for Pro's count, to Apple's original transaction ID, never to your name, email or Apple Account, so we cannot find it from your email address or identity. It expires as set out in section 13: most of it within days, the AI request count 90 days after it last changed, while the App Attest key record and the pairing of key ID and install ID are kept while the AI service runs. Erasing your iPhone removes the install ID from it. Write to <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a> and we will reply within the time the law requires. You can also complain to your data protection authority, such as the Information Commissioner's Office (ICO) in the UK.</p>
 <div class="box">
-<p><strong>Right to object:</strong> where we rely on legitimate interests (see the legal bases below: security and abuse prevention, the limits on AI requests, this website, support emails, and crash reports and usage statistics from Apple), you can object at any time by emailing <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a>.</p>
+<p><strong>Right to object:</strong> where we rely on legitimate interests (see the legal bases below: security and abuse prevention, the limits on AI requests, the install ID and the free plan's AI request count, this website, support emails, and crash reports and usage statistics from Apple), you can object at any time by emailing <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a>.</p>
 </div>
 <h3>Legal bases (where the UK GDPR or similar laws apply)</h3>
 <ul>
-  <li><strong>Consent:</strong> AI data sharing (section 4), and departure reminders (coming soon, section 8): the app uses your location only after you allow it with the iOS location permission (which you can withdraw in iOS Settings), and sends the place, starting point and time to Apple's map service only when you ask how long it takes to get somewhere or when to leave, or tell the assistant where you need to be and when. You can withdraw consent at any time; withdrawing consent does not affect processing done before you withdrew it.</li>
-  <li><strong>Legitimate interests:</strong> security and abuse prevention, including the limits on AI requests, which also keep our costs under control (section 6), delivering this website, answering your support emails (section 9), and the crash reports and usage statistics Apple shares with your permission (section 8).</li>
+  <li><strong>Consent:</strong> AI data sharing (section 4). You can withdraw consent at any time; withdrawing consent does not affect processing done before you withdrew it.</li>
+  <li><strong>Contract:</strong> providing Smart Schedules Pro when you subscribe: checking the purchase record Apple signs and counting your Pro requests (sections 6 and 7).</li>
+  <li><strong>Legitimate interests:</strong> security and abuse prevention, including the limits on AI requests, which also keep our costs under control (section 6); the free plan's AI allowance, with the install ID and the request count on our server (section 6); delivering this website, answering your support emails (section 9), and the crash reports and usage statistics Apple shares with your permission (section 8).</li>
   <li><strong>Legal obligations:</strong> responding to lawful requests.</li>
 </ul>
 
@@ -635,7 +660,7 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
 <p>Our server runs on Cloudflare's global network: requests are usually handled in a Cloudflare data center near you, and stored data is kept in Cloudflare's central storage, which has no fixed region, and may be cached worldwide. Google and Apple process data in their own global infrastructure, including in the United States. Cloudflare relies on the EU-U.S. Data Privacy Framework and its UK Extension (which covers users in the UK), and Standard Contractual Clauses for transfers. Google processes Gemini requests under its <a href="https://business.safety.google/processorterms/">Data Processing Addendum for Products Where Google is a Data Processor</a>, which relies on Standard Contractual Clauses for transfers, and Google LLC is also certified under the EU-U.S. Data Privacy Framework and its UK Extension. Support emails are stored in Google Workspace, which Google processes under its <a href="https://cloud.google.com/terms/data-processing-addendum">Cloud Data Processing Addendum</a>; transfers follow the terms of that addendum (a transfer mechanism Google has adopted, such as the Data Privacy Framework, or Standard Contractual Clauses). Vercel delivers this website from its global network and transfers data internationally under the standard contractual clauses in its Data Processing Addendum.</p>
 
 <h2 id="en-changes">18. Changes to this policy</h2>
-<p>We will post updates on this page and change the effective date. Significant changes will be clearly marked here, and if a change affects what the AI assistant sends, the app will ask for your permission again before sending anything.</p>
+<p>We will post updates on this page and change the effective date. Significant changes will be clearly marked here, and if a change affects what the AI assistant sends, or the app's explanation of what it sends changes significantly, the app will ask for your permission again before sending anything.</p>
 <p>A later version may offer other AI options, such as Apple's on-device model or an AI account you connect yourself; the current version has none. Before any new option sends your data anywhere, we will update this policy to name the recipient and what it receives, and the app will ask for your permission first. We will only offer services whose terms say they do not use this data to train AI models.</p>
 
 <h2 id="en-contact">19. Contact</h2>
