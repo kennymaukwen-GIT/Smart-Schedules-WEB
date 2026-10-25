@@ -125,7 +125,7 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <article id="zh" lang="zh-Hant" aria-labelledby="zh-title">
 <h1 id="zh-title">隱私權政策</h1>
 <p class="meta">生效日期：2026 年 10 月 25 日 · <a href="#en" hreflang="en" lang="en">English version</a></p>
-<p><strong>本版更新：</strong>新增 Smart Schedules Pro 月訂閱（第 7 節），以及 AI 使用次數的計算方式、安裝編號和伺服器上的使用次數記錄（第 6、13、15 節）；App 裡 AI 資料分享的說明現在也寫明我們的伺服器會收到安裝編號和 Pro 的購買記錄（第 4 節），說明傳送內容的文字有重大修改時，App 也會再請你允許（第 18 節）。iPhone 上的行程副本現在也記下每個行程有幾位邀請對象，只記人數（第 2 節）。</p>
+<p><strong>本版更新：</strong>新增 Smart Schedules Pro 月訂閱（第 7 節），以及 AI 使用次數的計算方式、安裝編號和伺服器上的使用次數記錄（第 6、13、15 節）；App 裡 AI 資料分享的說明現在也寫明我們的伺服器會收到安裝編號和 Pro 的購買記錄（第 4 節），說明傳送內容的文字有重大修改時，App 也會再請你允許（第 18 節）。iPhone 上的行程副本現在也記下每個行程有幾位邀請對象，只記人數（第 2 節）。新增 設定 › 聯絡人 email：你存的稱呼和 email 只存在 iPhone（第 2 節）。</p>
 
 <section class="box" aria-labelledby="zh-summary">
 <h2 id="zh-summary">重點摘要</h2>
@@ -177,6 +177,7 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>離線時等待送到 Google 的變更，包括你加入的參加者 email，直到 Google 收到為止（Google 拒絕的變更會留到你重試或捨棄）。</li>
   <li>你的設定、「助理記得的事」（包括你用來改設定的那句話）和從你的習慣學到的建議。</li>
   <li>你和助理的聊天記錄：最多保留最近 200 則，預設保留 30 天（可選 7 天、30 天或永久）。聊天記錄不會傳送到任何地方；助理只看得到目前這段對話（見第 4 節）。</li>
+  <li>你在 設定 › 聯絡人 email 存下的稱呼和 email 地址（你常邀請的人）。這份名單只存在這支 iPhone，不會傳到我們的伺服器或 Google 的 Gemini API。</li>
   <li>Google 登入權杖，存在 iOS 鑰匙圈（Keychain）。</li>
   <li>你對 AI 資料分享的選擇。</li>
   <li>安裝編號：存在 iOS 鑰匙圈的一個隨機編號（見第 6 節）。和這裡幾乎所有其他資料不同，刪除 App 或使用「清除這台裝置上的所有資料」後，它仍會保留。</li>
@@ -359,11 +360,12 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li><strong>停止 AI 資料分享：</strong>設定 › AI 與隱私 › 停止分享。</li>
   <li><strong>移除 Google 帳號：</strong>點右上角的頭像，在帳號上向左滑（或點「⋯」）› 移除帳號；也可以在 ☰ 選單裡帳號 email 旁的「⋯」移除。這會向 Google 要求撤銷 App 的授權，並從 iPhone 刪除該帳號的權杖和快取的行程。撤銷需要網路連線；如果當時離線，請到 Google 帳號的第三方應用程式和服務移除 Smart Schedules（見下一項）。</li>
   <li><strong>在 Google 端撤銷：</strong>到 Google 帳號的<a href="https://myaccount.google.com/connections">第三方應用程式和服務</a>移除 Smart Schedules。</li>
-  <li><strong>匯出：</strong>設定 › 資料 › 匯出我的資料。產生一個 JSON 檔案，包含設定、助理記得的事、帳號和行事曆、快取的行程、聊天記錄和 AI 資料分享的狀態（絕不包含登入權杖、安裝編號或 Pro 購買記錄）。</li>
-  <li><strong>清除：</strong>設定 › 資料 › 清除這台裝置上的所有資料。這會停止即時動態、撤回 AI 資料分享、移除通知、向 Google 要求撤銷授權並刪除所有登入權杖，再刪除帳號、快取的行程、待送出的變更、設定、聊天記錄和匯出檔。撤銷授權需要網路連線；如果當時離線，請到 Google 帳號移除 Smart Schedules 的存取權。清除不會刪除鑰匙圈裡的安裝編號，也不會刪除我們伺服器上的 AI 使用次數，所以免費次數不會因此重新計算；設定 › 助理 最近顯示的次數也會保留。它會刪除 iPhone 上的 Pro 購買記錄，訂閱仍有效時 StoreKit 會再放回來。伺服器上剩下的資料見第 6、13 節。</li>
+  <li><strong>匯出：</strong>設定 › 資料 › 匯出我的資料。產生一個 JSON 檔案，包含設定、助理記得的事、存下的聯絡人 email、帳號和行事曆、快取的行程、聊天記錄和 AI 資料分享的狀態（絕不包含登入權杖、安裝編號或 Pro 購買記錄）。</li>
+  <li><strong>清除：</strong>設定 › 資料 › 清除這台裝置上的所有資料。這會停止即時動態、撤回 AI 資料分享、移除通知、向 Google 要求撤銷授權並刪除所有登入權杖，再刪除帳號、快取的行程、待送出的變更、設定、存下的聯絡人 email、聊天記錄和匯出檔。撤銷授權需要網路連線；如果當時離線，請到 Google 帳號移除 Smart Schedules 的存取權。清除不會刪除鑰匙圈裡的安裝編號，也不會刪除我們伺服器上的 AI 使用次數，所以免費次數不會因此重新計算；設定 › 助理 最近顯示的次數也會保留。它會刪除 iPhone 上的 Pro 購買記錄，訂閱仍有效時 StoreKit 會再放回來。伺服器上剩下的資料見第 6、13 節。</li>
   <li><strong>安裝編號：</strong>只有清除整支 iPhone 才會移除：iPhone 設定 › 一般 › 移轉或重置 iPhone › 清除所有內容和設定。</li>
   <li><strong>Smart Schedules Pro：</strong>「管理訂閱」在 設定 › 助理，以及帳號頁（點右上角的頭像 › Smart Schedules Pro）；帳號頁也有「回復購買項目」。取消要透過 Apple；刪除 App 不會取消訂閱。</li>
   <li><strong>聊天記錄：</strong>設定 › 資料 › 保留聊天記錄／清除聊天記錄。</li>
+  <li><strong>聯絡人 email：</strong>設定 › 聯絡人 email，可以新增、修改和刪除。</li>
   <li><strong>麥克風和語音辨識：</strong>在 iPhone 設定 › App › Smart Schedules 關閉（或到 設定 › 隱私權與安全性）。關閉後仍可以打字。</li>
   <li><strong>刪除行程本身：</strong>在 Google 日曆裡刪除。</li>
 </ul>
@@ -400,7 +402,7 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
 <article id="en" lang="en" aria-labelledby="en-title">
 <h1 id="en-title">Privacy Policy</h1>
 <p class="meta">Effective date: 25 October 2026 · <a href="#zh" hreflang="zh-Hant" lang="zh-Hant">繁體中文版</a></p>
-<p><strong>What's new in this version:</strong> Smart Schedules Pro, a monthly subscription (section 7), and how AI requests are counted, with the install ID and the request count on our server (sections 6, 13 and 15). The AI data-sharing explanation in the app now also says that our server receives the install ID and the Pro purchase record (section 4), and the app asks you again when that explanation changes significantly (section 18). The copy of your events on your iPhone now also keeps how many guests each event has, only the number (section 2).</p>
+<p><strong>What's new in this version:</strong> Smart Schedules Pro, a monthly subscription (section 7), and how AI requests are counted, with the install ID and the request count on our server (sections 6, 13 and 15). The AI data-sharing explanation in the app now also says that our server receives the install ID and the Pro purchase record (section 4), and the app asks you again when that explanation changes significantly (section 18). The copy of your events on your iPhone now also keeps how many guests each event has, only the number (section 2). New: Settings › Contact emails; the names and addresses you save there stay on your iPhone (section 2).</p>
 
 <section class="box" aria-labelledby="en-summary">
 <h2 id="en-summary">In short</h2>
@@ -452,6 +454,7 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
   <li>Changes waiting to be sent to Google while you are offline, including the email addresses of guests you added, until Google has them (a change Google refused stays until you retry or discard it).</li>
   <li>Your settings, "What the assistant remembers" (including the words you used to change a setting) and suggestions learned from your habits.</li>
   <li>Your chat history with the assistant: at most the last 200 messages, kept for 30 days by default (you can choose 7 days, 30 days or forever). Chat history is never sent anywhere; the assistant only sees the current conversation (see section 4).</li>
+  <li>The names and email addresses you save in Settings › Contact emails (the people you invite). This list stays on your iPhone: it is not sent to our server or to Google's Gemini API.</li>
   <li>Google sign-in tokens, in the iOS Keychain.</li>
   <li>Your answer to the AI data-sharing question.</li>
   <li>The install ID, a random ID in the iOS Keychain (see section 6). Unlike almost everything else here, it stays when you delete the app or use "Erase all data on this device".</li>
@@ -634,11 +637,12 @@ Email：<a href="mailto:support@smart-schedules.com">support@smart-schedules.com
   <li><strong>Stop AI data sharing:</strong> Settings › AI &amp; privacy › Stop sharing.</li>
   <li><strong>Remove a Google account:</strong> tap your avatar at the top right, swipe left on the account (or tap ⋯) › Remove account; or use the ⋯ next to the account's email in the ☰ menu. This asks Google to revoke the app's access and deletes that account's tokens and cached events from your iPhone. Revoking needs an internet connection; if you were offline, remove Smart Schedules under Third-party apps &amp; services in your Google Account (next item).</li>
   <li><strong>Revoke at Google:</strong> remove Smart Schedules under <a href="https://myaccount.google.com/connections">Third-party apps &amp; services</a> in your Google Account.</li>
-  <li><strong>Export:</strong> Settings › Data › Export my data creates a JSON file with your settings, what the assistant remembers, accounts and calendars, cached events, chat history and AI data-sharing status (never sign-in tokens, the install ID or the Pro purchase record).</li>
-  <li><strong>Erase:</strong> Settings › Data › Erase all data on this device stops Live Activities, withdraws AI data sharing, removes notifications, asks Google to revoke access and deletes every sign-in token, then deletes accounts, cached events, pending changes, settings, chat history and exports. Revoking access needs an internet connection; if you were offline, remove Smart Schedules under Third-party apps &amp; services in your Google Account. Erasing does not remove the install ID from the Keychain or your AI request count from our server, so it does not start the free requests over; the count last shown in Settings › Assistant stays too. It deletes the Pro purchase record from your iPhone, and StoreKit puts it back while your subscription is active. For what remains on the server, see sections 6 and 13.</li>
+  <li><strong>Export:</strong> Settings › Data › Export my data creates a JSON file with your settings, what the assistant remembers, saved contact emails, accounts and calendars, cached events, chat history and AI data-sharing status (never sign-in tokens, the install ID or the Pro purchase record).</li>
+  <li><strong>Erase:</strong> Settings › Data › Erase all data on this device stops Live Activities, withdraws AI data sharing, removes notifications, asks Google to revoke access and deletes every sign-in token, then deletes accounts, cached events, pending changes, settings, saved contact emails, chat history and exports. Revoking access needs an internet connection; if you were offline, remove Smart Schedules under Third-party apps &amp; services in your Google Account. Erasing does not remove the install ID from the Keychain or your AI request count from our server, so it does not start the free requests over; the count last shown in Settings › Assistant stays too. It deletes the Pro purchase record from your iPhone, and StoreKit puts it back while your subscription is active. For what remains on the server, see sections 6 and 13.</li>
   <li><strong>Install ID:</strong> only erasing the iPhone removes it: iPhone Settings › General › Transfer or Reset iPhone › Erase All Content and Settings.</li>
   <li><strong>Smart Schedules Pro:</strong> Manage Subscription is in Settings › Assistant and in the account sheet (tap your avatar at the top right › Smart Schedules Pro), which also has Restore Purchases. You cancel with Apple; deleting the app does not cancel the subscription.</li>
   <li><strong>Chat history:</strong> Settings › Data › Keep chat history / Clear chat history.</li>
+  <li><strong>Contact emails:</strong> Settings › Contact emails, where you can add, change and delete them.</li>
   <li><strong>Microphone and speech recognition:</strong> turn them off for Smart Schedules in iPhone Settings › Apps › Smart Schedules (or Settings › Privacy &amp; Security). You can still type.</li>
   <li><strong>Delete the events themselves:</strong> in Google Calendar.</li>
 </ul>
