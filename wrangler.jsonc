@@ -1,0 +1,15 @@
+// The website as a Cloudflare Worker with static assets (Workers Builds deploys every push to main).
+// Every file in this folder is a page or an image except the ones in .assetsignore.
+{
+  "name": "smart-schedules-web",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "preview_urls": false,
+  "assets": {
+    "directory": ".",
+    // /privacy serves privacy.html; /privacy.html redirects to /privacy (as cleanUrls did on Vercel).
+    "html_handling": "auto-trailing-slash",
+    // Unknown paths get 404.html with status 404.
+    "not_found_handling": "404-page"
+  }
+}
