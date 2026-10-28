@@ -179,7 +179,7 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <p>撤銷授權需要網路連線。如果移除時沒有網路，或你想確認授權已經撤銷，請到 Google 帳號的<a href="https://myaccount.google.com/connections">第三方應用程式和服務</a>移除 Smart Schedules 的存取權。</p>
 
 <h3 id="zh-withdraw">怎麼停止 AI 資料分享（撤回同意）？</h3>
-<p>到 設定 › AI 與隱私 › 停止分享。之後助理不會再傳送任何內容給 Google Gemini。動態島和即時動態不受影響：它們本來就在你的 iPhone 上產生，不需要 AI 資料分享。示範模式仍然可以使用，改用離線規則。想再開啟時，到同一頁按「允許」。同一頁的「傳送的內容」列出會傳送哪幾類資料（例如「你的行事曆名稱和助理設定，但不包括你 Google 帳號的 email」）；完整的傳送內容請看隱私權政策的<a href="/privacy#zh-ai">第 4 節</a>。</p>
+<p>到 設定 › AI 與隱私 › 停止分享。之後助理不會再傳送任何內容給 Google Gemini。動態島和即時動態不受影響：它們本來就在你的 iPhone 上產生，不需要 AI 資料分享。示範模式仍然可以使用，改用離線規則。想再開啟時，到同一頁按「允許」。同一頁的「傳送的內容」列出會傳送哪幾類資料（例如「你的行事曆名稱、你幫帳號取的名字和助理設定，但不包括你 Google 帳號的 email」）；完整的傳送內容請看隱私權政策的<a href="/privacy#zh-ai">第 4 節</a>。</p>
 
 <h3 id="zh-live">動態島什麼時候會出現？</h3>
 <p>每個有時間的行程，會在開始前你設定的時間出現在動態島和鎖定畫面（設定 › 通知 › 動態島 › 顯示下一個行程：30、15、10 或 5 分鐘，預設 30 分鐘），行程結束後消失。即時動態直接在你的 iPhone 上產生，不需要允許 AI 資料分享，也不會把行程傳到我們的伺服器。</p>
@@ -192,10 +192,10 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <h3 id="zh-ai-requests">AI 助理可以用幾次？在哪裡看剩下幾次？</h3>
 <ul>
   <li><strong>免費版：</strong>每 30 天 50 次。第一個 30 天從你第一次使用開始，結束後馬上接著下一個 30 天。</li>
-  <li><strong>Smart Schedules Pro：</strong>不限次數 AI（合理使用：每天最多 50 次）。Pro 的 AI 使用次數沒有每月上限。為了公平使用並防止濫用，每個訂閱每天最多可以使用 50 次（合理使用），在你 iPhone 時區的午夜重新計算。使用同一個訂閱的 iPhone 共用每天 50 次的合理使用上限。</li>
+  <li><strong>Smart Schedules Pro：</strong>每個訂閱每天最多 20 次 AI，在你 iPhone 時區的午夜重新計算。使用同一個訂閱的 iPhone 共用每天 20 次。</li>
 </ul>
-<p>要看剩下幾次，點左上角的 ☰ › 一般 › 助理，看「AI 使用次數」：目前方案、剩餘次數，以及免費版的剩餘天數和什麼時候重新計算。訂閱 Pro 時，「剩餘次數」顯示「不限次數」；當天的 50 次只剩 10 次以下時，改為顯示「今天剩餘次數」（例如 8 / 50）和「重新計算：今晚午夜」。如果那裡寫著是起始次數，下次使用 AI 後就會顯示你的實際次數。</p>
-<p>次數用完時，助理會告訴你什麼時候恢復：免費版會說哪一天恢復，並提供「查看 Smart Schedules Pro」；Pro 達到當天的合理使用上限時，會說「已達今天的合理使用上限（50 次 AI），午夜過後重新計算。」示範模式也一樣，只是助理會改用離線規則回答你的要求。不用 AI 的功能，例如行事曆、提醒和即時動態，都可以照常使用。</p>
+<p>要看剩下幾次，點左上角的 ☰ › 一般 › 助理，看「AI 使用次數」：目前方案、剩餘次數，以及免費版的剩餘天數和什麼時候重新計算。訂閱 Pro 時，顯示「今天剩餘次數」（例如 8 / 20）和「重新計算：今晚午夜」。如果那裡寫著是起始次數，下次使用 AI 後就會顯示你的實際次數。</p>
+<p>次數用完時，助理會告訴你什麼時候恢復：免費版會說哪一天恢復，並提供「查看 Smart Schedules Pro」；Pro 用完當天的 20 次時，會說「今天的 20 次 AI 已用完，午夜過後恢復。」示範模式也一樣，只是助理會改用離線規則回答你的要求。不用 AI 的功能，例如行事曆、提醒和即時動態，都可以照常使用。</p>
 
 <h3 id="zh-ai-count">怎樣算一次？</h3>
 <p>一次就是一個完整任務：你向助理提出的一件事（打字、用麥克風按鈕說、透過 Siri，或在通知裡回覆），包括助理的追問，直到給出結果。例如「明天和 Joe 吃午餐」算一次，即使助理問你幾點、你回答了也一樣。一個任務最多包含你對追問的 5 個回答，之後再回答會算新的一次。在行程頁每點一次「AI 建議」，也算一次。</p>
@@ -229,14 +229,14 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>允許 AI 資料分享（第一次使用時的說明，或 設定 › AI 與隱私 › 允許）。</li>
   <li>連接 Google 帳號，助理才能讀寫你的行事曆。不登入的話，示範模式會用虛構的範例行事曆；允許 AI 資料分享後可以試用真正的 AI 助理，否則用離線規則。</li>
   <li>年滿 18 歲：Smart Schedules 只提供給年滿 18 歲的人使用（App Store 分級 18+），這是 Google Gemini API 條款的規定。</li>
-  <li>還有剩餘的 AI 使用次數：免費版每 30 天 50 次；Smart Schedules Pro 不限次數，合理使用上限為每天 50 次（見<a href="#zh-ai-requests">AI 助理可以用幾次</a>）。</li>
+  <li>還有剩餘的 AI 使用次數：免費版每 30 天 50 次；Smart Schedules Pro 每個訂閱每天最多 20 次（見<a href="#zh-ai-requests">AI 助理可以用幾次</a>）。</li>
   <li>在使用上限內：為了防止濫用，我們的伺服器會限制每個安裝每分鐘送出的請求次數，以及每天從通知回覆的次數，不論免費版或 Pro 都一樣。App 顯示「今天的使用次數已用完，請明天再試。」時，上限會在 UTC 0 點（台灣時間早上 8 點）重新計算。從通知回覆的次數用完時，打開 Smart Schedules 就能繼續。</li>
   <li>想用說的：在對話或快速輸入點麥克風按鈕，iOS 詢問時允許語音辨識和麥克風。語音在你的 iPhone 上轉成文字，聲音不會被錄下或傳送到任何地方；你按送出之前，什麼都不會傳送。沒有看到麥克風按鈕，表示這支 iPhone 還不能在裝置上辨識這個語言；鍵盤的聽寫鍵和 Siri 仍然可以用。</li>
 </ul>
 <p>助理會傳送什麼，請看隱私權政策的 <a href="/privacy#zh-ai">AI 助理</a>一節。</p>
 
 <h3 id="zh-ai-report">AI 的回覆有問題或不恰當怎麼辦？</h3>
-<p>AI 助理只處理行程和時間相關的要求，例如新增或修改行程、提醒、日期和時區；其他的事，它會禮貌地說沒辦法幫忙。AI 還是可能出錯，或說出不恰當的話。遇到這種情況：</p>
+<p>AI 助理 Lucius 只處理行程和時間相關的要求，例如新增或修改行程、提醒、日期和時區；其他的事，它會禮貌地說沒辦法幫忙。AI 還是可能出錯，或說出不恰當的話。遇到這種情況：</p>
 <ol>
   <li>在對話或快速輸入裡按住那則回覆，或助理做的卡片（例如計畫、加入的行程），選「回報這則回覆」。</li>
   <li>選「開啟郵件」：App 會打開一封寄到 <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a> 的新郵件，裡面已經有那則回覆、卡片上的內容、建議的回覆，以及 App 和 iOS 的版本（不含你輸入的內容）。回報內容也會一起拷貝起來，你可以貼到任何郵件 App。也可以選「拷貝回報內容」，自己貼到寄給 support@smart-schedules.com 的郵件裡。</li>
@@ -313,7 +313,7 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <p>Revoking needs an internet connection. If you were offline when you removed the account, or want to make sure access is revoked, remove Smart Schedules under <a href="https://myaccount.google.com/connections">Third-party apps &amp; services</a> in your Google Account.</p>
 
 <h3 id="en-withdraw">How do I stop AI data sharing (withdraw consent)?</h3>
-<p>Go to Settings › AI &amp; privacy › Stop sharing. The assistant then sends nothing more to Google Gemini. The Dynamic Island and Live Activities are not affected: they are created on your iPhone and never needed AI data sharing. Demo mode keeps working, with offline rules instead of the AI. To turn sharing back on, tap Allow on the same page. "What is sent" on that page lists the kinds of data sent (for example "Your calendar names and assistant settings, but not your Google account email addresses"); for the full list of what is sent, see <a href="/privacy#en-ai">section 4</a> of the Privacy Policy.</p>
+<p>Go to Settings › AI &amp; privacy › Stop sharing. The assistant then sends nothing more to Google Gemini. The Dynamic Island and Live Activities are not affected: they are created on your iPhone and never needed AI data sharing. Demo mode keeps working, with offline rules instead of the AI. To turn sharing back on, tap Allow on the same page. "What is sent" on that page lists the kinds of data sent (for example "Your calendar names, the names you gave your accounts and assistant settings, but not your Google account email addresses"); for the full list of what is sent, see <a href="/privacy#en-ai">section 4</a> of the Privacy Policy.</p>
 
 <h3 id="en-live">When does an event appear in the Dynamic Island?</h3>
 <p>Each timed event appears in the Dynamic Island and on the Lock Screen the time you chose before it starts (Settings › Notifications › Dynamic Island › Show next event: 30, 15, 10 or 5 minutes; 30 by default) and goes away after it ends. Live Activities are created on your iPhone: they need no AI data sharing, and your events are not sent to our server for them.</p>
@@ -326,10 +326,10 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
 <h3 id="en-ai-requests">How many AI requests can I make, and where do I see what's left?</h3>
 <ul>
   <li><strong>Free:</strong> 50 requests every 30 days. The first 30 days start with your first request; when they end, the next 30 days start straight away.</li>
-  <li><strong>Smart Schedules Pro:</strong> unlimited AI requests (fair use: up to 50 a day). Pro has no monthly limit on AI requests. To keep the service fair and guard against abuse, each subscription can make up to 50 requests a day (fair use); the count starts over at midnight in your iPhone's time zone. iPhones that use the same subscription share the fair-use limit of 50 a day.</li>
+  <li><strong>Smart Schedules Pro:</strong> up to 20 AI requests a day for each subscription; the count starts over at midnight in your iPhone's time zone. iPhones that use the same subscription share the 20 a day.</li>
 </ul>
-<p>To see what's left, tap ☰ at the top left › General › Assistant and look under "AI requests": your plan, the requests left and, on the free plan, the days left and when the count starts over. With Pro, "Requests left" reads "Unlimited"; when 10 or fewer of today's 50 are left, it shows "Left today" (for example, 8 / 50) and "Starts over: Tonight at midnight". If it says these are starting numbers, your own count shows after your next AI request.</p>
-<p>When the requests are used up, the assistant tells you when they come back: on the free plan, the date, with See Smart Schedules Pro; on Pro, when you reach the day's fair-use limit, it says "You've reached today's fair-use limit of 50 AI requests. It starts over after midnight." Demo mode does the same, but answers your request with its offline rules. Everything that doesn't use the AI, such as your calendar, reminders and Live Activities, keeps working.</p>
+<p>To see what's left, tap ☰ at the top left › General › Assistant and look under "AI requests": your plan, the requests left and, on the free plan, the days left and when the count starts over. With Pro, it shows "Left today" (for example, 8 / 20) and "Starts over: Tonight at midnight". If it says these are starting numbers, your own count shows after your next AI request.</p>
+<p>When the requests are used up, the assistant tells you when they come back: on the free plan, the date, with See Smart Schedules Pro; on Pro, when the day's 20 are used, it says "You've used today's 20 AI requests. They come back after midnight." Demo mode does the same, but answers your request with its offline rules. Everything that doesn't use the AI, such as your calendar, reminders and Live Activities, keeps working.</p>
 
 <h3 id="en-ai-count">What counts as one request?</h3>
 <p>One request is one task: something you ask the assistant (typed, spoken with the microphone button, through Siri or in a reply to a notification), with its follow-up questions, up to its result. For example, "Lunch with Joe tomorrow" counts as one, even if the assistant asks what time and you answer. One task includes up to 5 of your answers to its questions; after that, the next answer counts as a new request. Each tap of AI suggestions on an event page also counts as one.</p>
@@ -363,14 +363,14 @@ mark.todo { background: var(--todo-bg); color: var(--todo-text); padding: 0 0.25
   <li>AI data sharing allowed (in the dialog the first time you use it, or Settings › AI &amp; privacy › Allow).</li>
   <li>A connected Google account, so the assistant can read and write your calendar. Without signing in, demo mode uses fictional sample calendars; allow AI data sharing to try the real assistant on them, otherwise it uses offline rules.</li>
   <li>You must be 18 or older: Smart Schedules is only for people aged 18 or older (rated 18+ on the App Store), as Google's Gemini API terms require.</li>
-  <li>AI requests left: the free plan has 50 every 30 days, and Smart Schedules Pro has unlimited requests, with a fair-use limit of 50 a day (see <a href="#en-ai-requests">How many AI requests can I make</a>).</li>
+  <li>AI requests left: the free plan has 50 every 30 days, and Smart Schedules Pro has up to 20 a day per subscription (see <a href="#en-ai-requests">How many AI requests can I make</a>).</li>
   <li>Staying within the limits: to prevent abuse, our server limits how many requests each installation can send it a minute, and how many replies can be sent from a notification each day, the same on the free plan and Pro. If the app says "Today's limit is used up. Try again tomorrow.", the limit starts again at 00:00 UTC (8:00 in Taiwan). When the limit for replies from a notification is used up, open Smart Schedules to continue.</li>
   <li>To speak instead of typing: tap the microphone button in the chat or Quick Capture and allow Speech Recognition and the microphone when iOS asks. Your speech is turned into text on your iPhone, and the audio is not recorded or sent anywhere; nothing is sent until you tap Send. If there is no microphone button, this iPhone can't recognise that language on the device yet; the keyboard's dictation key and Siri still work.</li>
 </ul>
 <p>For what the assistant sends, see <a href="/privacy#en-ai">The AI assistant</a> in the Privacy Policy.</p>
 
 <h3 id="en-ai-report">What if an AI reply is wrong or inappropriate?</h3>
-<p>The AI assistant only handles requests about your schedule and time, such as adding or changing events, reminders, dates and time zones; for anything else, it politely says it can't help. AI can still get things wrong or say something inappropriate. If that happens:</p>
+<p>The AI assistant, Lucius, only handles requests about your schedule and time, such as adding or changing events, reminders, dates and time zones; for anything else, it politely says it can't help. AI can still get things wrong or say something inappropriate. If that happens:</p>
 <ol>
   <li>In the chat or Quick Capture, touch and hold the reply, or a card the assistant made (such as a plan or the events it added), and choose Report this reply.</li>
   <li>Choose Open Email: the app opens a new email to <a href="mailto:support@smart-schedules.com">support@smart-schedules.com</a> with the reply, what its cards show, its suggested replies and the app and iOS versions already in it (not what you typed). The report is also copied, so you can paste it into any email app. Or choose Copy Report and paste it into an email to support@smart-schedules.com yourself.</li>
